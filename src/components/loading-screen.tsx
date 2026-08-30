@@ -1,15 +1,14 @@
 "use client"
 
-import { useEffect, useLayoutEffect, useState } from "react"
+import { useEffect, useLayoutEffect, useState, useRef } from "react"
 import Image from "next/image"
-
-const DURATION_MS = 2200
 
 export function LoadingScreen() {
   const [pct, setPct] = useState(0)
   const [exiting, setExiting] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [skip, setSkip] = useState(false)
+  const isLoadedRef = useRef(false)
 
   // Runs before paint so a returning visitor (same tab session) never sees
   // the boot animation flash in.
@@ -23,30 +22,61 @@ export function LoadingScreen() {
   useEffect(() => {
     if (skip) return
 
+    // Track window / DOM load completion
+    if (typeof window !== "undefined") {
+      if (document.readyState === "complete") {
+        isLoadedRef.current = true
+      } else {
+        const handleLoad = () => {
+          isLoadedRef.current = true
+        }
+        window.addEventListener("load", handleLoad, { once: true })
+      }
+    }
+
     const start = performance.now()
     let raf = 0
 
     function tick(now: number) {
-      const t = Math.min(1, (now - start) / DURATION_MS)
-      const eased = t < 0.55 ? 1.55 * t - 0.55 * t * t : 0.715 + 0.285 * Math.pow((t - 0.55) / 0.45, 1.7)
-      setPct(Math.min(100, Math.round(eased * 100)))
+      const elapsed = now - start
+      const isLoaded = isLoadedRef.current
 
-      if (t < 1) {
+      let currentPct = 0
+
+      if (!isLoaded) {
+        // While page is loading, progress smoothly up to 90%
+        const simulatedT = Math.min(1, elapsed / 1800)
+        currentPct = Math.min(90, Math.round(simulatedT * 90))
+      } else {
+        // Once page load completes, quickly finish from current % up to 100%
+        const finishStart = start + 500
+        const finishT = Math.min(1, Math.max(0, (now - finishStart) / 400))
+        currentPct = Math.min(100, Math.round(90 + finishT * 10))
+
+        // Also enforce minimum display time (800ms) so fast connections get a smooth transition
+        if (elapsed < 800) {
+          const minT = elapsed / 800
+          currentPct = Math.min(100, Math.round(minT * 100))
+        }
+      }
+
+      setPct(currentPct)
+
+      if (currentPct < 100) {
         raf = requestAnimationFrame(tick)
       } else {
+        // 100% reached & page ready -> trigger smooth curtain exit
         setExiting(true)
         setTimeout(() => {
           setHidden(true)
           try {
             sessionStorage.setItem("sabta-loaded", "1")
           } catch {
-            // Private-mode browsers can refuse storage; the event below still
-            // fires, so the hero reveal is not blocked by this.
+            // Private-mode browsers can refuse storage
           }
-          // Let the hero (and anything else waiting on first paint) start its
-          // entrance now that the loader is actually out of the way.
+          // Let hero animations play now that loading curtain is removed
           window.dispatchEvent(new Event("sabta:loaded"))
-        }, 700)
+        }, 600)
       }
     }
 
@@ -64,7 +94,16 @@ export function LoadingScreen() {
       <div className="sabta-loader-stage" data-exit={exiting}>
         <div className="sabta-loader-logo">
           <div className="sabta-loader-logo-wipe">
-            <Image src="/brand/logo.png" alt="Sabta Trading Co. L.L.C." width={620} height={202} priority unoptimized style={{ height: "auto" }} className="block w-full" />
+            <Image
+              src="/brand/logo.png"
+              alt="Sabta Trading Co. L.L.C."
+              width={620}
+              height={202}
+              priority
+              unoptimized
+              style={{ height: "auto" }}
+              className="block w-full"
+            />
           </div>
         </div>
 
@@ -73,7 +112,7 @@ export function LoadingScreen() {
             <div className="sabta-loader-fill" style={{ width: `${pct}%` }} />
           </div>
           <div className="sabta-loader-text">
-            <span>Loading</span>
+            <span>Loading Assets</span>
             <span className="sabta-loader-divider" />
             <span className="sabta-loader-pct">{pct}%</span>
           </div>
