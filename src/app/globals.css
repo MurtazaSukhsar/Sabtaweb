@@ -63,12 +63,14 @@
        so horizontal scroll is still prevented, but sticky elements work
        correctly relative to the real page scroll. */
     -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
   }
   body {
     background: var(--background);
     color: var(--foreground);
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     width: 100%;
   }
