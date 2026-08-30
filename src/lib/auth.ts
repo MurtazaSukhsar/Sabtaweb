@@ -33,27 +33,38 @@ function sign(value: string) {
 }
 
 export async function verifyCredentials(email: string, password: string): Promise<boolean> {
-  if (!isSupabaseConfigured) {
-    // Fallback to environment password check for local development
-    return password.length > 0 && password === getAdminPassword()
-  }
+  const envEmail = process.env.ADMIN_EMAIL || "admin@sabtadxb.com"
+  const envPassword = getAdminPassword()
 
-  try {
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    })
-
-    if (error || !data.user) {
-      console.error("Supabase Auth failed:", error?.message)
-      return false
-    }
-
+  // Match against environment variables
+  if (
+    email.trim().toLowerCase() === envEmail.trim().toLowerCase() &&
+    password === envPassword
+  ) {
     return true
-  } catch (err) {
-    console.error("Exception during auth check:", err)
-    return false
   }
+
+  // Also check if password matches environment password
+  if (password === envPassword) {
+    return true
+  }
+
+  if (isSupabaseConfigured) {
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      })
+
+      if (!error && data?.user) {
+        return true
+      }
+    } catch (err) {
+      console.error("Supabase Auth exception:", err)
+    }
+  }
+
+  return false
 }
 
 export async function createSession() {
