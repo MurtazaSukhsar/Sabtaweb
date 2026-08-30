@@ -8,8 +8,6 @@ import { CtaBanner } from "@/components/home/cta-banner"
 import { catalogPdfPath } from "@/lib/site-data"
 import { getSiteConfig, getCategories, getAllCategoriesWithItems } from "@/lib/db"
 
-export const dynamic = "force-dynamic"
-
 export async function generateMetadata(): Promise<Metadata> {
   const [siteConfig, categories] = await Promise.all([
     getSiteConfig(),

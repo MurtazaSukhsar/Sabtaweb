@@ -1,5 +1,6 @@
 import { supabase, supabaseAdmin, isSupabaseConfigured } from "./supabase"
 import { readAllProducts } from "./products"
+import { unstable_cache, updateTag } from "next/cache"
 import {
   siteConfig as staticSiteConfig,
   contactInfo as staticContactInfo,
@@ -105,19 +106,33 @@ export type CategoryWithItems = CategoryMeta & { items: Product[] }
 // Site Settings Helpers
 // -------------------------------------------------------------
 
+// Cache tags let admin saves (see saveSetting/addProduct/etc. below) push
+// fresh content out immediately via updateTag, while everyone else gets
+// a cached, statically-servable page instead of a fresh Supabase round trip
+// on every request (and every Next.js Link prefetch).
+const CATEGORIES_TAG = "categories"
+const PRODUCTS_TAG = "products"
+const settingTag = (key: string) => `site-setting:${key}`
+
 export async function getSetting<T>(key: string, fallback: T): Promise<T> {
   if (!isSupabaseConfigured) return fallback
   try {
-    const { data, error } = await supabase
-      .from("site_settings")
-      .select("value")
-      .eq("key", key)
-      .single()
+    const getCachedSetting = unstable_cache(
+      async () => {
+        const { data, error } = await supabase
+          .from("site_settings")
+          .select("value")
+          .eq("key", key)
+          .single()
 
-    if (error || !data) {
-      return fallback
-    }
-    return data.value as T
+        if (error || !data) return null
+        return (data.value as T) ?? null
+      },
+      ["site-setting", key],
+      { tags: [settingTag(key)], revalidate: 3600 },
+    )
+    const value = await getCachedSetting()
+    return value === null ? fallback : value
   } catch (err) {
     console.error(`Error loading setting "${key}":`, err)
     return fallback
@@ -155,6 +170,7 @@ export async function saveSetting(key: string, value: any): Promise<boolean> {
       .from("site_settings")
       .upsert({ key, value, updated_at: new Date().toISOString() })
     if (error) throw error
+    updateTag(settingTag(key))
     return true
   } catch (err) {
     console.error(`Error saving setting "${key}":`, err)
@@ -166,15 +182,24 @@ export async function saveSetting(key: string, value: any): Promise<boolean> {
 // Categories Helpers
 // -------------------------------------------------------------
 
-export async function getCategories(): Promise<CategoryMeta[]> {
-  if (!isSupabaseConfigured) return staticCategories
-  try {
+const getCachedCategoryRows = unstable_cache(
+  async () => {
     const { data, error } = await supabase
       .from("categories")
       .select("*")
       .order("order")
 
     if (error || !data) throw error || new Error("No categories found")
+    return data
+  },
+  ["categories"],
+  { tags: [CATEGORIES_TAG], revalidate: 3600 },
+)
+
+export async function getCategories(): Promise<CategoryMeta[]> {
+  if (!isSupabaseConfigured) return staticCategories
+  try {
+    const data = await getCachedCategoryRows()
     return data.map((c) => ({
       slug: c.slug,
       name: c.name,
@@ -201,15 +226,24 @@ export async function getCategoryMeta(slug: string): Promise<CategoryMeta | unde
 // Products Helpers
 // -------------------------------------------------------------
 
-export async function getProducts(): Promise<Product[]> {
-  if (!isSupabaseConfigured) return readAllProducts()
-  try {
+const getCachedProductRows = unstable_cache(
+  async () => {
     const { data, error } = await supabase
       .from("products")
       .select("*")
       .order("order")
 
     if (error || !data) throw error
+    return data
+  },
+  ["products"],
+  { tags: [PRODUCTS_TAG], revalidate: 3600 },
+)
+
+export async function getProducts(): Promise<Product[]> {
+  if (!isSupabaseConfigured) return readAllProducts()
+  try {
+    const data = await getCachedProductRows()
     return data.map((p) => ({
       id: p.id,
       categorySlug: p.category_slug,
@@ -377,6 +411,7 @@ export async function addProduct(input: {
   try {
     const { error } = await supabaseAdmin.from("products").insert(newProduct)
     if (error) throw error
+    updateTag(PRODUCTS_TAG)
     return {
       id,
       categorySlug: input.categorySlug,
@@ -456,6 +491,8 @@ export async function updateProduct(id: string, patch: {
 
     if (error) throw error
 
+    updateTag(PRODUCTS_TAG)
+
     return {
       ...current,
       id: newId,
@@ -484,6 +521,7 @@ export async function deleteProduct(id: string): Promise<boolean> {
   try {
     const { error } = await supabaseAdmin.from("products").delete().eq("id", id)
     if (error) throw error
+    updateTag(PRODUCTS_TAG)
     return true
   } catch (err) {
     console.error("Supabase deleteProduct failed, trying local fallback:", err)
@@ -506,6 +544,7 @@ export async function reorderCategory(categorySlug: string, orderedIds: string[]
     const results = await Promise.all(promises)
     const error = results.find((r) => r.error)
     if (error) throw error.error
+    updateTag(PRODUCTS_TAG)
   } catch (err) {
     console.error("Supabase reorderCategory failed, trying local fallback:", err)
     return localReorderCategory(categorySlug, orderedIds)
@@ -551,6 +590,7 @@ export async function createCategory(input: {
       order,
     })
     if (error) throw error
+    updateTag(CATEGORIES_TAG)
     return true
   } catch (err) {
     console.error("Supabase createCategory failed:", err)
@@ -591,6 +631,7 @@ export async function updateCategory(slug: string, data: {
       .eq("slug", slug)
 
     if (error) throw error
+    updateTag(CATEGORIES_TAG)
     return true
   } catch (err) {
     console.error("Supabase updateCategory failed:", err)
@@ -607,6 +648,7 @@ export async function deleteCategory(slug: string): Promise<boolean> {
   try {
     const { error } = await supabaseAdmin.from("categories").delete().eq("slug", slug)
     if (error) throw error
+    updateTag(CATEGORIES_TAG)
     return true
   } catch (err) {
     console.error("Supabase deleteCategory failed:", err)
@@ -626,6 +668,7 @@ export async function reorderCategories(orderedSlugs: string[]): Promise<void> {
     const results = await Promise.all(promises)
     const error = results.find((r) => r.error)
     if (error) throw error.error
+    updateTag(CATEGORIES_TAG)
   } catch (err) {
     console.error("Supabase reorderCategories failed:", err)
   }
@@ -634,19 +677,7 @@ export async function reorderCategories(orderedSlugs: string[]): Promise<void> {
 import { testimonials as staticTestimonials } from "./site-data"
 
 export async function getTestimonials(): Promise<any[]> {
-  if (!isSupabaseConfigured) return staticTestimonials
-  try {
-    const { data, error } = await supabase
-      .from("site_settings")
-      .select("value")
-      .eq("key", "testimonials")
-      .single()
-    if (error || !data) return staticTestimonials
-    return data.value
-  } catch (err) {
-    console.error("Error loading testimonials from Supabase:", err)
-    return staticTestimonials
-  }
+  return getSetting("testimonials", staticTestimonials)
 }
 
 

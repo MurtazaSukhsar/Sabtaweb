@@ -11,8 +11,6 @@ import { CtaBanner } from "@/components/home/cta-banner"
 import { HomeFaq } from "@/components/home/home-faq"
 import { getAllCategoriesWithItems, getFeaturedProducts, getSiteConfig, getTestimonials, getFaqs } from "@/lib/db"
 
-export const dynamic = "force-dynamic"
-
 export async function generateMetadata(): Promise<Metadata> {
   const siteConfig = await getSiteConfig()
   const title = `${siteConfig.name} | ${siteConfig.tagline}`

@@ -12,8 +12,6 @@ import { CtaBanner } from "@/components/home/cta-banner"
 import { catalogPdfPath } from "@/lib/site-data"
 import { getCategoryWithItems, getProduct, getProducts, getSiteConfig } from "@/lib/db"
 
-export const dynamic = "force-dynamic"
-
 export async function generateStaticParams() {
   const products = await getProducts()
   return products.map((p) => ({ category: p.categorySlug, slug: p.slug }))
