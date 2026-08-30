@@ -51,14 +51,17 @@ export async function Hero() {
           of them, not underneath. */}
       <div className="absolute inset-0 z-[2]" aria-hidden="true">
         <video
-          className="size-full object-cover"
-          src="/hero/hero-video.mp4"
+          className="size-full object-cover transform-gpu"
+          poster="/hero/hero-poster.webp"
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
-        />
+          preload="metadata"
+        >
+          <source src="/hero/hero-video.webm" type="video/webm" />
+          <source src="/hero/hero-video.mp4" type="video/mp4" />
+        </video>
         {/* Light legibility gradient only — mostly transparent, so the
             footage reads clearly instead of washing out under a flat tint.
             Just enough blue behind the text column and along the bottom
