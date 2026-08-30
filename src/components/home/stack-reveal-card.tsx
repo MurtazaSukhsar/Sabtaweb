@@ -16,6 +16,8 @@ interface StackRevealCardProps {
   flyDistance: number
   /** Priority-load the first couple of images */
   priority?: boolean
+  /** False for cards deep in the stack: skips layer promotion + shadow. */
+  isNear?: boolean
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -33,7 +35,7 @@ const CATEGORY_COLORS: Record<string, string> = {
 const clamp = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v))
 const easeInCubic = (t: number) => t * t * t
 
-export function StackRevealCard({ index, product, advance, flyDistance, priority }: StackRevealCardProps) {
+export function StackRevealCard({ index, product, advance, flyDistance, priority, isNear = true }: StackRevealCardProps) {
   const colorHex = CATEGORY_COLORS[product.categorySlug] || "#1b2a80"
   const categoryName = product.categorySlug.replace(/-/g, " ")
 
@@ -66,12 +68,12 @@ export function StackRevealCard({ index, product, advance, flyDistance, priority
   return (
     <motion.div
       style={{ transform, opacity, zIndex: 30 - index }}
-      className="absolute left-0 top-0 h-full w-full will-change-transform"
+      className={`absolute left-0 top-0 h-full w-full${isNear ? " will-change-transform" : ""}`}
     >
       <Link
         href={`/products/${product.categorySlug}/${product.slug}`}
         className="group flex h-full w-full flex-col overflow-hidden rounded-[28px] border border-gray-200 bg-white"
-        style={{ boxShadow: "0 30px 60px -20px rgba(16, 24, 40, 0.28)" }}
+        style={{ boxShadow: isNear ? "0 30px 60px -20px rgba(16, 24, 40, 0.28)" : "none" }}
         aria-label={`View Product: ${product.name}`}
       >
         {/* Category accent strip */}

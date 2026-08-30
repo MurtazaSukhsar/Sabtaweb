@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react"
 import { useScroll, useTransform, useMotionValueEvent } from "framer-motion"
 import type { Product } from "@/lib/products"
 import { StackRevealCard } from "@/components/home/stack-reveal-card"
+import { useMediaQuery } from "@/components/home/three-d-photo-carousel"
 
 export function FeaturedProducts({ products }: { products: Product[] }) {
   const items = products.filter((p) => p.image).slice(0, 8)
@@ -13,6 +14,11 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
   const sectionRef = useRef<HTMLElement>(null)
   const [flyDistance, setFlyDistance] = useState(500)
   const [activeCardIndex, setActiveCardIndex] = useState(0)
+  // Mobile flicks are short relative to a 45vh-per-card pinned scroll track,
+  // so the deck barely advances per gesture and reads as unresponsive/laggy.
+  // Shrinking the per-card scroll distance on small screens tightens that
+  // input-to-progress ratio without touching the desktop feel.
+  const isMobile = useMediaQuery("(max-width: 640px)")
 
   useEffect(() => {
     const updateDimensions = () => {
@@ -42,7 +48,7 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
       aria-label="Featured products"
       className="relative w-full bg-background"
       style={{
-        height: `calc(100dvh + ${(cardCount - 1) * 45}vh)`,
+        height: `calc(100dvh + ${(cardCount - 1) * (isMobile ? 22 : 45)}vh)`,
       }}
     >
       {/* Background Grid Pattern */}
@@ -71,6 +77,11 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
                 advance={advance}
                 flyDistance={flyDistance}
                 priority={index < 2}
+                // Only the cards near the visible one get GPU layer promotion
+                // and a rendered shadow — with up to 8 cards stacked and fully
+                // overlapping, promoting every one of them is what was making
+                // the deck feel heavy/laggy to scroll through on mobile GPUs.
+                isNear={Math.abs(index - activeCardIndex) <= 2}
               />
             ))}
           </div>
