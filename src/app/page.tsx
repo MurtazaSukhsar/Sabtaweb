@@ -6,7 +6,6 @@ import { FeaturedProducts } from "@/components/home/featured-products"
 import { StatsCounter } from "@/components/home/stats-counter"
 import { WhyChooseUs } from "@/components/home/why-choose-us"
 import { Industries } from "@/components/home/industries"
-import { TextScrollRevealSection } from "@/components/home/text-scroll-reveal-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { CtaBanner } from "@/components/home/cta-banner"
 import { HomeFaq } from "@/components/home/home-faq"
@@ -47,12 +46,7 @@ export default async function HomePage() {
       <StatsCounter />
       <WhyChooseUs />
       <Industries />
-      <TextScrollRevealSection
-        text="Every Connection Matters"
-        bgClass="bg-primary"
-        colorClass="text-primary-foreground"
-        textClassName="text-2xl sm:text-3xl lg:text-4xl font-black"
-      />
+
       <TestimonialsSection
         title="What Our Clients Say"
         description="Hear from procurement managers and contractors who trust Sabta Trading."
