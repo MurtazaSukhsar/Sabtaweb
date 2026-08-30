@@ -8,7 +8,9 @@ export function LoadingScreen() {
   const [exiting, setExiting] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [skip, setSkip] = useState(false)
-  const isLoadedRef = useRef(false)
+
+  const isFullyLoadedRef = useRef(false)
+  const progressTargetRef = useRef(15)
 
   // Runs before paint so a returning visitor (same tab session) never sees
   // the boot animation flash in.
@@ -22,66 +24,112 @@ export function LoadingScreen() {
   useEffect(() => {
     if (skip) return
 
-    // Track window / DOM load completion
-    if (typeof window !== "undefined") {
-      if (document.readyState === "complete") {
-        isLoadedRef.current = true
-      } else {
-        const handleLoad = () => {
-          isLoadedRef.current = true
+    let isMounted = true
+
+    // Check DOM, Images, Video, Fonts readiness
+    const checkAssets = () => {
+      if (!isMounted) return
+
+      const images = Array.from(document.images)
+      const video = document.querySelector("video")
+
+      let totalCount = 1 + images.length + (video ? 1 : 0)
+      let loadedCount = document.readyState === "complete" ? 1 : 0
+
+      images.forEach((img) => {
+        if (img.complete && img.naturalWidth > 0) {
+          loadedCount++
         }
-        window.addEventListener("load", handleLoad, { once: true })
+      })
+
+      if (video) {
+        if (video.readyState >= 3) {
+          loadedCount++
+        }
+      }
+
+      const ratio = loadedCount / Math.max(1, totalCount)
+      const target = Math.min(95, Math.round(ratio * 95))
+
+      if (target > progressTargetRef.current) {
+        progressTargetRef.current = target
+      }
+
+      // Check if all DOM & critical media are 100% complete
+      const isDomComplete = document.readyState === "complete"
+      const isImagesComplete = images.every((img) => img.complete)
+      const isVideoReady = !video || video.readyState >= 2
+
+      if (isDomComplete && isImagesComplete && isVideoReady) {
+        isFullyLoadedRef.current = true
+        progressTargetRef.current = 100
       }
     }
 
-    const start = performance.now()
+    // Attach listeners
+    const handleLoad = () => checkAssets()
+    window.addEventListener("load", handleLoad)
+    document.addEventListener("readystatechange", handleLoad)
+
+    const videoEl = document.querySelector("video")
+    if (videoEl) {
+      videoEl.addEventListener("canplay", handleLoad)
+      videoEl.addEventListener("loadeddata", handleLoad)
+    }
+
+    const interval = setInterval(checkAssets, 150)
+
+    // Safety timeout: Ensure page opens after 6s even on super slow network
+    const maxTimeout = setTimeout(() => {
+      isFullyLoadedRef.current = true
+      progressTargetRef.current = 100
+    }, 6000)
+
+    // Smooth progress animation tick
+    let currentDisplayPct = 0
     let raf = 0
 
-    function tick(now: number) {
-      const elapsed = now - start
-      const isLoaded = isLoadedRef.current
+    function tick() {
+      const targetPct = progressTargetRef.current
 
-      let currentPct = 0
-
-      if (!isLoaded) {
-        // While page is loading, progress smoothly up to 90%
-        const simulatedT = Math.min(1, elapsed / 1800)
-        currentPct = Math.min(90, Math.round(simulatedT * 90))
-      } else {
-        // Once page load completes, quickly finish from current % up to 100%
-        const finishStart = start + 500
-        const finishT = Math.min(1, Math.max(0, (now - finishStart) / 400))
-        currentPct = Math.min(100, Math.round(90 + finishT * 10))
-
-        // Also enforce minimum display time (800ms) so fast connections get a smooth transition
-        if (elapsed < 800) {
-          const minT = elapsed / 800
-          currentPct = Math.min(100, Math.round(minT * 100))
-        }
-      }
-
-      setPct(currentPct)
-
-      if (currentPct < 100) {
+      if (currentDisplayPct < targetPct) {
+        // Smoothly step towards target percentage
+        const step = isFullyLoadedRef.current ? 4 : 2
+        currentDisplayPct = Math.min(targetPct, currentDisplayPct + step)
+        setPct(currentDisplayPct)
         raf = requestAnimationFrame(tick)
-      } else {
-        // 100% reached & page ready -> trigger smooth curtain exit
+      } else if (currentDisplayPct >= 100 && isFullyLoadedRef.current) {
+        setPct(100)
         setExiting(true)
         setTimeout(() => {
+          if (!isMounted) return
           setHidden(true)
           try {
             sessionStorage.setItem("sabta-loaded", "1")
           } catch {
-            // Private-mode browsers can refuse storage
+            // Private mode storage fallback
           }
-          // Let hero animations play now that loading curtain is removed
           window.dispatchEvent(new Event("sabta:loaded"))
         }, 600)
+      } else {
+        raf = requestAnimationFrame(tick)
       }
     }
 
     raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
+
+    return () => {
+      isMounted = false
+      clearInterval(interval)
+      clearTimeout(maxTimeout)
+      cancelAnimationFrame(raf)
+      window.removeEventListener("load", handleLoad)
+      document.removeEventListener("readystatechange", handleLoad)
+      if (videoEl) {
+        videoEl.removeEventListener("canplay", handleLoad)
+        videoEl.removeEventListener("loadeddata", handleLoad)
+      }
+    }
   }, [skip])
 
   return (
@@ -112,7 +160,7 @@ export function LoadingScreen() {
             <div className="sabta-loader-fill" style={{ width: `${pct}%` }} />
           </div>
           <div className="sabta-loader-text">
-            <span>Loading Assets</span>
+            <span>Loading Experience</span>
             <span className="sabta-loader-divider" />
             <span className="sabta-loader-pct">{pct}%</span>
           </div>
