@@ -55,9 +55,6 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
       <div className="sticky top-0 flex h-dvh flex-col items-center justify-between pt-20 pb-8 px-4 overflow-hidden">
         {/* Header */}
         <div className="relative z-40 flex flex-col items-center gap-2 text-center px-4">
-          <span className="text-xs font-bold tracking-widest text-primary uppercase bg-primary/10 px-3.5 py-1 rounded-full">
-            Curated Highlights
-          </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider text-black">
             Featured Products
           </h2>
