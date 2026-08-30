@@ -155,6 +155,30 @@ export function SiteSettingsForm({
               />
             </div>
             <div className="sm:col-span-2">
+              <label className="text-xs font-bold uppercase text-muted-foreground">Company Profile Image / Logo URL</label>
+              <div className="mt-1.5 flex items-center gap-4">
+                <input
+                  type="text"
+                  placeholder="/brand/logo.png or https://..."
+                  value={siteConfig.companyProfileImage || ""}
+                  onChange={(e) => setSiteConfig({ ...siteConfig, companyProfileImage: e.target.value })}
+                  className="h-11 flex-1 rounded-lg border border-input bg-background px-4 outline-none focus:border-accent"
+                />
+                {siteConfig.companyProfileImage && (
+                  <div className="relative size-12 shrink-0 rounded-lg border border-border bg-white overflow-hidden p-1 flex items-center justify-center">
+                    <img
+                      src={siteConfig.companyProfileImage}
+                      alt="Logo preview"
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                )}
+              </div>
+              <p className="mt-1 text-[11px] text-muted-foreground">
+                Image shown next to Company Profile on the About page. Defaults to /brand/logo.png.
+              </p>
+            </div>
+            <div className="sm:col-span-2">
               <label className="text-xs font-bold uppercase text-muted-foreground">Meta/Footer Description</label>
               <textarea
                 rows={3}

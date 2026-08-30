@@ -50,13 +50,13 @@ export default async function AboutPage() {
 
         <div className="mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <ScrollReveal>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-white">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-white shadow-sm flex items-center justify-center">
               <Image
-                src="/products/rigging-hardware/bow-shackle.webp"
-                alt="Bow shackle, part of Sabta Trading's rigging hardware range"
+                src={siteConfig.companyProfileImage || "/brand/logo.png"}
+                alt={`${siteConfig.name} Company Profile`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain p-10 sm:p-14"
+                className="object-contain p-8 sm:p-12"
               />
             </div>
           </ScrollReveal>

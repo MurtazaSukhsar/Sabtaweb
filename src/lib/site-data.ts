@@ -20,6 +20,7 @@ export const siteConfig = {
     "Dubai-based fastener and marine rigging hardware distributor since 1994, stocking 16,000+ items for the Automotive, Manufacturing, Marine and Oilfield industries.",
   url: "https://www.sabtadxb.com",
   itemsInStock: "16,000+",
+  companyProfileImage: "/brand/logo.png",
 }
 
 export const contactInfo = {
