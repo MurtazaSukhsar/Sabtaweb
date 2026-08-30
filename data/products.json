@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "hose-clips-clamps--hose-clip",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "hose-clip",
+    "name": "Hose Clip",
+    "description": "Hose Clip, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/hose-clip.webp",
+    "order": 0,
+    "featured": true,
+    "heroCarousel": true
+  },
+  {
+    "id": "hose-clips-clamps--stainless-steel-p-clip",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "stainless-steel-p-clip",
+    "name": "Stainless Steel P Clip",
+    "grade": "304 & 316",
+    "description": "Stainless Steel P Clip, supplied in 304 & 316, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/stainless-steel-p-clip.webp",
+    "order": 1
+  },
+  {
+    "id": "hose-clips-clamps--stainless-steel-rubber-hanging-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "stainless-steel-rubber-hanging-clamp",
+    "name": "Stainless Steel Rubber Hanging Clamp",
+    "grade": "304 & 316",
+    "description": "Stainless Steel Rubber Hanging Clamp, supplied in 304 & 316, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/stainless-steel-rubber-hanging-clamp.webp",
+    "order": 2
+  },
+  {
+    "id": "hose-clips-clamps--double-wire-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "double-wire-clamp",
+    "name": "Double Wire Clamp",
+    "grade": "GI",
+    "description": "Double Wire Clamp, supplied in GI, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/double-wire-clamp.webp",
+    "order": 3
+  },
+  {
+    "id": "hose-clips-clamps--single-bolt-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "single-bolt-clamp",
+    "name": "Single Bolt Clamp",
+    "grade": "GI, 304 & 316",
+    "description": "Single Bolt Clamp, supplied in GI, 304 & 316, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/single-bolt-clamp.webp",
+    "order": 4
+  },
+  {
+    "id": "hose-clips-clamps--single-ear-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "single-ear-clamp",
+    "name": "Single Ear Clamp",
+    "grade": "304",
+    "description": "Single Ear Clamp, supplied in 304, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/single-ear-clamp.webp",
+    "order": 5
+  },
+  {
+    "id": "hose-clips-clamps--double-ear-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "double-ear-clamp",
+    "name": "Double Ear Clamp",
+    "grade": "GI",
+    "description": "Double Ear Clamp, supplied in GI, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/double-ear-clamp.webp",
+    "order": 6
+  },
+  {
+    "id": "hose-clips-clamps--beam-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "beam-clamp",
+    "name": "Beam Clamp",
+    "grade": "304",
+    "description": "Beam Clamp, supplied in 304, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/beam-clamp.webp",
+    "order": 7
+  },
+  {
+    "id": "hose-clips-clamps--muffler-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "muffler-clamp",
+    "name": "Muffler Clamp",
+    "grade": "GI, 304 & 316",
+    "description": "Muffler Clamp, supplied in GI, 304 & 316, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/muffler-clamp.webp",
+    "order": 8
+  },
+  {
+    "id": "hose-clips-clamps--ss-grating-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "ss-grating-clamp",
+    "name": "SS Grating Clamp",
+    "grade": "304 & 316",
+    "description": "SS Grating Clamp, supplied in 304 & 316, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/ss-grating-clamp.webp",
+    "order": 9
+  },
+  {
+    "id": "hose-clips-clamps--hdg-grating-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "hdg-grating-clamp",
+    "name": "HDG Grating Clamp",
+    "grade": "304 & 316",
+    "description": "HDG Grating Clamp, supplied in 304 & 316, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/hdg-grating-clamp.webp",
+    "order": 10
+  },
+  {
+    "id": "hose-clips-clamps--toggle",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "toggle",
+    "name": "Toggle",
+    "grade": "GI, 304",
+    "description": "Toggle, supplied in GI, 304, stocked by Sabta Trading for securing hose, pipe and tubing connections.",
+    "image": "/products/hose-clips-clamps/toggle.webp",
+    "order": 11
+  },
+  {
+    "id": "hose-clips-clamps--saddle-clamp",
+    "categorySlug": "hose-clips-clamps",
+    "slug": "saddle-clamp",
+    "name": "Saddle Clamp",
+    "grade": "GI, 304",
+    "description": "Saddle Clamp, supplied in GI, 304, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/hose-clips-clamps/saddle-clamp.webp",
+    "order": 12
+  },
+  {
+    "id": "banding-systems--banding-strip",
+    "categorySlug": "banding-systems",
+    "slug": "banding-strip",
+    "name": "Banding Strip",
+    "grade": "304 & 316",
+    "description": "Banding Strip, supplied in 304 & 316, stocked by Sabta Trading for strapping and securing bundles of hose, cable or pipe.",
+    "image": "/products/banding-systems/banding-strip.webp",
+    "order": 0
+  },
+  {
+    "id": "banding-systems--banding-strip-clips",
+    "categorySlug": "banding-systems",
+    "slug": "banding-strip-clips",
+    "name": "Banding Strip Clips",
+    "grade": "304 & 316",
+    "description": "Banding Strip Clips, supplied in 304 & 316, stocked by Sabta Trading for strapping and securing bundles of hose, cable or pipe.",
+    "image": "/products/banding-systems/banding-strip-clips.webp",
+    "order": 1
+  },
+  {
+    "id": "banding-systems--ear-lokt-buckles",
+    "categorySlug": "banding-systems",
+    "slug": "ear-lokt-buckles",
+    "name": "Ear Lokt Buckles",
+    "grade": "304 & 316",
+    "description": "Ear Lokt Buckles, supplied in 304 & 316, stocked by Sabta Trading for bundling and securing hose, cable and pipe runs.",
+    "image": "/products/banding-systems/ear-lokt-buckles.webp",
+    "order": 2
+  },
+  {
+    "id": "banding-systems--multi-band",
+    "categorySlug": "banding-systems",
+    "slug": "multi-band",
+    "name": "Multi-Band",
+    "grade": "304",
+    "description": "Multi-Band, supplied in 304, stocked by Sabta Trading for bundling and securing hose, cable and pipe runs.",
+    "image": "/products/banding-systems/multi-band.webp",
+    "order": 3
+  },
+  {
+    "id": "banding-systems--multi-band-screw",
+    "categorySlug": "banding-systems",
+    "slug": "multi-band-screw",
+    "name": "Multi-Band Screw",
+    "grade": "304",
+    "description": "Multi-Band Screw, supplied in 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/banding-systems/multi-band-screw.webp",
+    "order": 4
+  },
+  {
+    "id": "rigging-hardware--snap-hook",
+    "categorySlug": "rigging-hardware",
+    "slug": "snap-hook",
+    "name": "Snap Hook",
+    "grade": "GI, 304, 316",
+    "description": "Snap Hook, supplied in GI, 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/snap-hook.webp",
+    "order": 0
+  },
+  {
+    "id": "rigging-hardware--snap-hook-with-lock",
+    "categorySlug": "rigging-hardware",
+    "slug": "snap-hook-with-lock",
+    "name": "Snap Hook With Lock",
+    "grade": "304, 316",
+    "description": "Snap Hook With Lock, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/snap-hook-with-lock.webp",
+    "order": 1
+  },
+  {
+    "id": "rigging-hardware--swivel-eye-snap-hook",
+    "categorySlug": "rigging-hardware",
+    "slug": "swivel-eye-snap-hook",
+    "name": "Swivel Eye Snap Hook",
+    "grade": "304, 316",
+    "description": "Swivel Eye Snap Hook, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/swivel-eye-snap-hook.webp",
+    "order": 2
+  },
+  {
+    "id": "rigging-hardware--snap-hook-with-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "snap-hook-with-eye",
+    "name": "Snap Hook With Eye",
+    "grade": "304, 316",
+    "description": "Snap Hook With Eye, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/snap-hook-with-eye.webp",
+    "order": 3
+  },
+  {
+    "id": "rigging-hardware--swivel-eye-snap-bolt",
+    "categorySlug": "rigging-hardware",
+    "slug": "swivel-eye-snap-bolt",
+    "name": "Swivel Eye Snap Bolt",
+    "grade": "304, 316",
+    "description": "Swivel Eye Snap Bolt, supplied in 304, 316, stocked by Sabta Trading for allowing free rotation under load in a rigging assembly.",
+    "image": "/products/rigging-hardware/swivel-eye-snap-bolt.webp",
+    "order": 4,
+    "featured": true
+  },
+  {
+    "id": "rigging-hardware--snap-hook-with-eye-lock",
+    "categorySlug": "rigging-hardware",
+    "slug": "snap-hook-with-eye-lock",
+    "name": "Snap Hook With Eye Lock",
+    "grade": "304, 316",
+    "description": "Snap Hook With Eye Lock, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/snap-hook-with-eye-lock.webp",
+    "order": 5
+  },
+  {
+    "id": "rigging-hardware--pulley-swivel-single-wheel",
+    "categorySlug": "rigging-hardware",
+    "slug": "pulley-swivel-single-wheel",
+    "name": "Pulley Swivel Single Wheel",
+    "grade": "Nickel, 304, 316",
+    "description": "Pulley Swivel Single Wheel, supplied in Nickel, 304, 316, stocked by Sabta Trading for redirecting load lines in lifting and rigging systems.",
+    "image": "/products/rigging-hardware/pulley-swivel-single-wheel.webp",
+    "order": 6
+  },
+  {
+    "id": "rigging-hardware--pulley-swivel-double-wheel",
+    "categorySlug": "rigging-hardware",
+    "slug": "pulley-swivel-double-wheel",
+    "name": "Pulley Swivel Double Wheel",
+    "grade": "Nickel, 304, 316",
+    "description": "Pulley Swivel Double Wheel, supplied in Nickel, 304, 316, stocked by Sabta Trading for redirecting load lines in lifting and rigging systems.",
+    "image": "/products/rigging-hardware/pulley-swivel-double-wheel.webp",
+    "order": 7
+  },
+  {
+    "id": "rigging-hardware--pulley-fixed-single-wheel",
+    "categorySlug": "rigging-hardware",
+    "slug": "pulley-fixed-single-wheel",
+    "name": "Pulley Fixed Single Wheel",
+    "grade": "Nickel",
+    "description": "Pulley Fixed Single Wheel, supplied in Nickel, stocked by Sabta Trading for redirecting load lines in lifting and rigging systems.",
+    "image": "/products/rigging-hardware/pulley-fixed-single-wheel.webp",
+    "order": 8
+  },
+  {
+    "id": "rigging-hardware--pulley-fixed-double-wheel",
+    "categorySlug": "rigging-hardware",
+    "slug": "pulley-fixed-double-wheel",
+    "name": "Pulley Fixed Double Wheel",
+    "grade": "Nickel",
+    "description": "Pulley Fixed Double Wheel, supplied in Nickel, stocked by Sabta Trading for redirecting load lines in lifting and rigging systems.",
+    "image": "/products/rigging-hardware/pulley-fixed-double-wheel.webp",
+    "order": 9
+  },
+  {
+    "id": "rigging-hardware--pelican-hook",
+    "categorySlug": "rigging-hardware",
+    "slug": "pelican-hook",
+    "name": "Pelican Hook",
+    "grade": "304, 316",
+    "description": "Pelican Hook, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/pelican-hook.webp",
+    "order": 10
+  },
+  {
+    "id": "rigging-hardware--quick-link",
+    "categorySlug": "rigging-hardware",
+    "slug": "quick-link",
+    "name": "Quick Link",
+    "grade": "GI, 304, 316",
+    "description": "Quick Link, supplied in GI, 304, 316, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/quick-link.webp",
+    "order": 11
+  },
+  {
+    "id": "rigging-hardware--d-shackle",
+    "categorySlug": "rigging-hardware",
+    "slug": "d-shackle",
+    "name": "D Shackle",
+    "grade": "GI, 304, 316",
+    "description": "D Shackle, supplied in GI, 304, 316, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/rigging-hardware/d-shackle.webp",
+    "order": 12
+  },
+  {
+    "id": "rigging-hardware--bow-shackle",
+    "categorySlug": "rigging-hardware",
+    "slug": "bow-shackle",
+    "name": "Bow Shackle",
+    "grade": "GI, 304, 316",
+    "description": "Bow Shackle, supplied in GI, 304, 316, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/rigging-hardware/bow-shackle.webp",
+    "order": 13
+  },
+  {
+    "id": "rigging-hardware--lifting-eye-bolt",
+    "categorySlug": "rigging-hardware",
+    "slug": "lifting-eye-bolt",
+    "name": "Lifting Eye Bolt",
+    "grade": "GI, 304, 316",
+    "description": "Lifting Eye Bolt, supplied in GI, 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/lifting-eye-bolt.webp",
+    "order": 14
+  },
+  {
+    "id": "rigging-hardware--wire-rope-clip",
+    "categorySlug": "rigging-hardware",
+    "slug": "wire-rope-clip",
+    "name": "Wire Rope Clip",
+    "grade": "GI, 304, 316",
+    "description": "Wire Rope Clip, supplied in GI, 304, 316, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/rigging-hardware/wire-rope-clip.webp",
+    "order": 15
+  },
+  {
+    "id": "rigging-hardware--lifting-eye-nut",
+    "categorySlug": "rigging-hardware",
+    "slug": "lifting-eye-nut",
+    "name": "Lifting Eye Nut",
+    "grade": "GI, 304, 316",
+    "description": "Lifting Eye Nut, supplied in GI, 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/lifting-eye-nut.webp",
+    "order": 16
+  },
+  {
+    "id": "rigging-hardware--long-d-shackle",
+    "categorySlug": "rigging-hardware",
+    "slug": "long-d-shackle",
+    "name": "Long D Shackle",
+    "grade": "304, 316",
+    "description": "Long D Shackle, supplied in 304, 316, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/rigging-hardware/long-d-shackle.webp",
+    "order": 17
+  },
+  {
+    "id": "rigging-hardware--o-ring",
+    "categorySlug": "rigging-hardware",
+    "slug": "o-ring",
+    "name": "O Ring",
+    "grade": "GI, 304, 316",
+    "description": "O Ring, supplied in GI, 304, 316, stocked by Sabta Trading for sealing against fluid or gas leakage.",
+    "image": "/products/rigging-hardware/o-ring.webp",
+    "order": 18
+  },
+  {
+    "id": "rigging-hardware--thimble",
+    "categorySlug": "rigging-hardware",
+    "slug": "thimble",
+    "name": "Thimble",
+    "grade": "GI, 304, 316",
+    "description": "Thimble, supplied in GI, 304, 316, stocked by Sabta Trading for protecting wire rope from wear at a loop or eye.",
+    "image": "/products/rigging-hardware/thimble.webp",
+    "order": 19
+  },
+  {
+    "id": "rigging-hardware--swivel-jaw-jaw",
+    "categorySlug": "rigging-hardware",
+    "slug": "swivel-jaw-jaw",
+    "name": "Swivel Jaw & Jaw",
+    "grade": "304, 316",
+    "description": "Swivel Jaw & Jaw, supplied in 304, 316, stocked by Sabta Trading for allowing free rotation under load in a rigging assembly.",
+    "image": "/products/rigging-hardware/swivel-jaw-jaw.webp",
+    "order": 20
+  },
+  {
+    "id": "rigging-hardware--cleat",
+    "categorySlug": "rigging-hardware",
+    "slug": "cleat",
+    "name": "Cleat",
+    "grade": "304, 316",
+    "description": "Cleat, supplied in 304, 316, stocked by Sabta Trading for securing and cleating off a rope or line.",
+    "image": "/products/rigging-hardware/cleat.webp",
+    "order": 21
+  },
+  {
+    "id": "rigging-hardware--swivel-eye-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "swivel-eye-eye",
+    "name": "Swivel Eye & Eye",
+    "grade": "304, 316",
+    "description": "Swivel Eye & Eye, supplied in 304, 316, stocked by Sabta Trading for allowing free rotation under load in a rigging assembly.",
+    "image": "/products/rigging-hardware/swivel-eye-eye.webp",
+    "order": 22
+  },
+  {
+    "id": "rigging-hardware--swivel-jaw-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "swivel-jaw-eye",
+    "name": "Swivel Jaw & Eye",
+    "grade": "304, 316",
+    "description": "Swivel Jaw & Eye, supplied in 304, 316, stocked by Sabta Trading for allowing free rotation under load in a rigging assembly.",
+    "image": "/products/rigging-hardware/swivel-jaw-eye.webp",
+    "order": 23
+  },
+  {
+    "id": "rigging-hardware--toggle-nut-butterfly-nut",
+    "categorySlug": "rigging-hardware",
+    "slug": "toggle-nut-butterfly-nut",
+    "name": "Toggle Nut / Butterfly Nut",
+    "grade": "304, 316",
+    "description": "Toggle Nut / Butterfly Nut, supplied in 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/rigging-hardware/toggle-nut-butterfly-nut.webp",
+    "order": 24
+  },
+  {
+    "id": "rigging-hardware--eye-bolt",
+    "categorySlug": "rigging-hardware",
+    "slug": "eye-bolt",
+    "name": "Eye Bolt",
+    "grade": "304, 316",
+    "description": "Eye Bolt, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/eye-bolt.webp",
+    "order": 25
+  },
+  {
+    "id": "rigging-hardware--dog-bolt",
+    "categorySlug": "rigging-hardware",
+    "slug": "dog-bolt",
+    "name": "Dog Bolt",
+    "grade": "304, 316",
+    "description": "Dog Bolt, supplied in 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/rigging-hardware/dog-bolt.webp",
+    "order": 26
+  },
+  {
+    "id": "rigging-hardware--u-bolt-with-bracket",
+    "categorySlug": "rigging-hardware",
+    "slug": "u-bolt-with-bracket",
+    "name": "U Bolt With Bracket",
+    "grade": "304, 316",
+    "description": "U Bolt With Bracket, supplied in 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/rigging-hardware/u-bolt-with-bracket.webp",
+    "order": 27
+  },
+  {
+    "id": "rigging-hardware--ring-eye-bolt",
+    "categorySlug": "rigging-hardware",
+    "slug": "ring-eye-bolt",
+    "name": "Ring Eye Bolt",
+    "grade": "304, 316",
+    "description": "Ring Eye Bolt, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/ring-eye-bolt.webp",
+    "order": 28
+  },
+  {
+    "id": "rigging-hardware--eye-hook-bolt",
+    "categorySlug": "rigging-hardware",
+    "slug": "eye-hook-bolt",
+    "name": "Eye Hook Bolt",
+    "grade": "304, 316",
+    "description": "Eye Hook Bolt, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/eye-hook-bolt.webp",
+    "order": 29
+  },
+  {
+    "id": "rigging-hardware--round-eye-plate",
+    "categorySlug": "rigging-hardware",
+    "slug": "round-eye-plate",
+    "name": "Round Eye Plate",
+    "grade": "304, 316",
+    "description": "Round Eye Plate, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/round-eye-plate.webp",
+    "order": 30
+  },
+  {
+    "id": "rigging-hardware--diamond-pad-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "diamond-pad-eye",
+    "name": "Diamond Pad Eye",
+    "grade": "304, 316",
+    "description": "Diamond Pad Eye, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/diamond-pad-eye.webp",
+    "order": 31
+  },
+  {
+    "id": "rigging-hardware--square-plate-with-ring",
+    "categorySlug": "rigging-hardware",
+    "slug": "square-plate-with-ring",
+    "name": "Square Plate With Ring",
+    "grade": "304, 316",
+    "description": "Square Plate With Ring, supplied in 304, 316, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/square-plate-with-ring.webp",
+    "order": 32
+  },
+  {
+    "id": "rigging-hardware--pad-eye-strap",
+    "categorySlug": "rigging-hardware",
+    "slug": "pad-eye-strap",
+    "name": "Pad Eye Strap",
+    "grade": "304, 316",
+    "description": "Pad Eye Strap, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/pad-eye-strap.webp",
+    "order": 33
+  },
+  {
+    "id": "rigging-hardware--oblong-pad-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "oblong-pad-eye",
+    "name": "Oblong Pad Eye",
+    "grade": "304, 316",
+    "description": "Oblong Pad Eye, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/oblong-pad-eye.webp",
+    "order": 34
+  },
+  {
+    "id": "rigging-hardware--square-eye-plate",
+    "categorySlug": "rigging-hardware",
+    "slug": "square-eye-plate",
+    "name": "Square Eye Plate",
+    "grade": "304, 316",
+    "description": "Square Eye Plate, supplied in 304, 316, stocked by Sabta Trading for anchoring lifting or tie-down points to a structure.",
+    "image": "/products/rigging-hardware/square-eye-plate.webp",
+    "order": 35
+  },
+  {
+    "id": "rigging-hardware--turnbuckle-hook-to-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "turnbuckle-hook-to-eye",
+    "name": "Turnbuckle Hook To Eye",
+    "grade": "GI, 304, 316",
+    "description": "Turnbuckle Hook To Eye, supplied in GI, 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/turnbuckle-hook-to-eye.webp",
+    "order": 36
+  },
+  {
+    "id": "rigging-hardware--d-ring",
+    "categorySlug": "rigging-hardware",
+    "slug": "d-ring",
+    "name": "D Ring",
+    "grade": "304, 316",
+    "description": "D Ring, supplied in 304, 316, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/d-ring.webp",
+    "order": 37
+  },
+  {
+    "id": "rigging-hardware--turnbuckle-jaw-to-jaw",
+    "categorySlug": "rigging-hardware",
+    "slug": "turnbuckle-jaw-to-jaw",
+    "name": "Turnbuckle Jaw To Jaw",
+    "grade": "304, 316",
+    "description": "Turnbuckle Jaw To Jaw, supplied in 304, 316, stocked by Sabta Trading for tensioning and adjusting rigging lines.",
+    "image": "/products/rigging-hardware/turnbuckle-jaw-to-jaw.webp",
+    "order": 38
+  },
+  {
+    "id": "rigging-hardware--turnbuckle-eye-to-eye",
+    "categorySlug": "rigging-hardware",
+    "slug": "turnbuckle-eye-to-eye",
+    "name": "Turnbuckle Eye To Eye",
+    "grade": "304, 316",
+    "description": "Turnbuckle Eye To Eye, supplied in 304, 316, stocked by Sabta Trading for tensioning and adjusting rigging lines.",
+    "image": "/products/rigging-hardware/turnbuckle-eye-to-eye.webp",
+    "order": 39
+  },
+  {
+    "id": "rigging-hardware--turnbuckle-hook-to-hook",
+    "categorySlug": "rigging-hardware",
+    "slug": "turnbuckle-hook-to-hook",
+    "name": "Turnbuckle Hook To Hook",
+    "grade": "304, 316",
+    "description": "Turnbuckle Hook To Hook, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/turnbuckle-hook-to-hook.webp",
+    "order": 40
+  },
+  {
+    "id": "rigging-hardware--turnbuckle-pipe-jaw-to-jaw",
+    "categorySlug": "rigging-hardware",
+    "slug": "turnbuckle-pipe-jaw-to-jaw",
+    "name": "Turnbuckle Pipe Jaw To Jaw",
+    "grade": "304, 316",
+    "description": "Turnbuckle Pipe Jaw To Jaw, supplied in 304, 316, stocked by Sabta Trading for tensioning and adjusting rigging lines.",
+    "image": "/products/rigging-hardware/turnbuckle-pipe-jaw-to-jaw.webp",
+    "order": 41
+  },
+  {
+    "id": "rigging-hardware--delta-quick-link",
+    "categorySlug": "rigging-hardware",
+    "slug": "delta-quick-link",
+    "name": "Delta Quick Link",
+    "grade": "304, 316",
+    "description": "Delta Quick Link, supplied in 304, 316, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/delta-quick-link.webp",
+    "order": 42
+  },
+  {
+    "id": "rigging-hardware--ss-cargo-hook-fixed",
+    "categorySlug": "rigging-hardware",
+    "slug": "ss-cargo-hook-fixed",
+    "name": "SS Cargo Hook Fixed",
+    "grade": "304, 316",
+    "description": "SS Cargo Hook Fixed, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/ss-cargo-hook-fixed.webp",
+    "order": 43
+  },
+  {
+    "id": "rigging-hardware--bow-nut",
+    "categorySlug": "rigging-hardware",
+    "slug": "bow-nut",
+    "name": "Bow Nut",
+    "grade": "304, 316",
+    "description": "Bow Nut, supplied in 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/rigging-hardware/bow-nut.webp",
+    "order": 44
+  },
+  {
+    "id": "rigging-hardware--ss-cargo-hook-swivel",
+    "categorySlug": "rigging-hardware",
+    "slug": "ss-cargo-hook-swivel",
+    "name": "SS Cargo Hook Swivel",
+    "grade": "304, 316",
+    "description": "SS Cargo Hook Swivel, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/ss-cargo-hook-swivel.webp",
+    "order": 45
+  },
+  {
+    "id": "rigging-hardware--bow-shackle-bolt-type",
+    "categorySlug": "rigging-hardware",
+    "slug": "bow-shackle-bolt-type",
+    "name": "Bow Shackle - Bolt Type",
+    "grade": "304, 316",
+    "description": "Bow Shackle - Bolt Type, supplied in 304, 316, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/rigging-hardware/bow-shackle-bolt-type.webp",
+    "order": 46
+  },
+  {
+    "id": "rigging-hardware--d-shackle-bolt-type",
+    "categorySlug": "rigging-hardware",
+    "slug": "d-shackle-bolt-type",
+    "name": "D Shackle - Bolt Type",
+    "grade": "304, 316",
+    "description": "D Shackle - Bolt Type, supplied in 304, 316, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/rigging-hardware/d-shackle-bolt-type.webp",
+    "order": 47
+  },
+  {
+    "id": "rigging-hardware--ferrule-round-type",
+    "categorySlug": "rigging-hardware",
+    "slug": "ferrule-round-type",
+    "name": "Ferrule (Round Type)",
+    "grade": "Aluminum",
+    "description": "Ferrule (Round Type), supplied in Aluminum, stocked by Sabta Trading for terminating and securing wire rope ends.",
+    "image": "/products/rigging-hardware/ferrule-round-type.webp",
+    "order": 48
+  },
+  {
+    "id": "rigging-hardware--ferrule-8-type-oval",
+    "categorySlug": "rigging-hardware",
+    "slug": "ferrule-8-type-oval",
+    "name": "Ferrule (8-Type / Oval)",
+    "grade": "Aluminum",
+    "description": "Ferrule (8-Type / Oval), supplied in Aluminum, stocked by Sabta Trading for terminating and securing wire rope ends.",
+    "image": "/products/rigging-hardware/ferrule-8-type-oval.webp",
+    "order": 49
+  },
+  {
+    "id": "rigging-hardware--ss-clevis-grab-hook",
+    "categorySlug": "rigging-hardware",
+    "slug": "ss-clevis-grab-hook",
+    "name": "SS Clevis Grab Hook",
+    "grade": "304, 316",
+    "description": "SS Clevis Grab Hook, supplied in 304, 316, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/rigging-hardware/ss-clevis-grab-hook.webp",
+    "order": 50
+  },
+  {
+    "id": "rigging-hardware--cross-wire-rope-clip",
+    "categorySlug": "rigging-hardware",
+    "slug": "cross-wire-rope-clip",
+    "name": "Cross Wire Rope Clip",
+    "grade": "304, 316",
+    "description": "Cross Wire Rope Clip, supplied in 304, 316, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/rigging-hardware/cross-wire-rope-clip.webp",
+    "order": 51
+  },
+  {
+    "id": "rigging-hardware--ferrule",
+    "categorySlug": "rigging-hardware",
+    "slug": "ferrule",
+    "name": "Ferrule",
+    "grade": "Aluminum, 304",
+    "description": "Ferrule, supplied in Aluminum, 304, stocked by Sabta Trading for terminating and securing wire rope ends.",
+    "image": "/products/rigging-hardware/ferrule.webp",
+    "order": 52
+  },
+  {
+    "id": "rigging-hardware--wire-rope-clip-flat-duplex-style",
+    "categorySlug": "rigging-hardware",
+    "slug": "wire-rope-clip-flat-duplex-style",
+    "name": "Wire Rope Clip (Flat Duplex Style)",
+    "grade": "304, 316",
+    "description": "Wire Rope Clip (Flat Duplex Style), supplied in 304, 316, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/rigging-hardware/wire-rope-clip-flat-duplex-style.webp",
+    "order": 53
+  },
+  {
+    "id": "rigging-hardware--simplex-duplex",
+    "categorySlug": "rigging-hardware",
+    "slug": "simplex-duplex",
+    "name": "Simplex Duplex",
+    "grade": "304, 316",
+    "description": "Simplex Duplex, supplied in 304, 316, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/simplex-duplex.webp",
+    "order": 54
+  },
+  {
+    "id": "rigging-hardware--wire-rope-hang-hook",
+    "categorySlug": "rigging-hardware",
+    "slug": "wire-rope-hang-hook",
+    "name": "Wire Rope Hang Hook",
+    "grade": "304",
+    "description": "Wire Rope Hang Hook, supplied in 304, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/rigging-hardware/wire-rope-hang-hook.webp",
+    "order": 55
+  },
+  {
+    "id": "rigging-hardware--wire-rope",
+    "categorySlug": "rigging-hardware",
+    "slug": "wire-rope",
+    "name": "Wire Rope",
+    "grade": "GI, 304, 316",
+    "description": "Wire Rope, supplied in GI, 304, 316, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/rigging-hardware/wire-rope.webp",
+    "order": 56
+  },
+  {
+    "id": "rigging-hardware--link-chain",
+    "categorySlug": "rigging-hardware",
+    "slug": "link-chain",
+    "name": "Link Chain",
+    "grade": "304, 316",
+    "description": "Link Chain, supplied in 304, 316, stocked by Sabta Trading for chain rigging, lashing and lifting assemblies.",
+    "image": "/products/rigging-hardware/link-chain.webp",
+    "order": 57
+  },
+  {
+    "id": "rigging-hardware--binding-wire",
+    "categorySlug": "rigging-hardware",
+    "slug": "binding-wire",
+    "name": "Binding Wire",
+    "grade": "304",
+    "description": "Binding Wire, supplied in 304, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/binding-wire.webp",
+    "order": 58
+  },
+  {
+    "id": "rigging-hardware--wire-mesh",
+    "categorySlug": "rigging-hardware",
+    "slug": "wire-mesh",
+    "name": "Wire Mesh",
+    "grade": "304",
+    "description": "Wire Mesh, supplied in 304, stocked by Sabta Trading for rigging, lifting and securing loads.",
+    "image": "/products/rigging-hardware/wire-mesh.webp",
+    "order": 59
+  },
+  {
+    "id": "rigging-hardware--pvc-wire-rope",
+    "categorySlug": "rigging-hardware",
+    "slug": "pvc-wire-rope",
+    "name": "PVC Wire Rope",
+    "grade": "GI, 304, 316",
+    "description": "PVC Wire Rope, supplied in GI, 304, 316, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/rigging-hardware/pvc-wire-rope.webp",
+    "order": 60
+  },
+  {
+    "id": "rigging-hardware--gi-chain-30m-bag",
+    "categorySlug": "rigging-hardware",
+    "slug": "gi-chain-30m-bag",
+    "name": "GI Chain (30m Bag)",
+    "grade": "304",
+    "description": "GI Chain (30m Bag), supplied in 304, stocked by Sabta Trading for chain rigging, lashing and lifting assemblies.",
+    "image": "/products/rigging-hardware/gi-chain-30m-bag.webp",
+    "order": 61
+  },
+  {
+    "id": "lifting-marine-hardware--d-shackle-screw-pin",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "d-shackle-screw-pin",
+    "name": "D Shackle - Screw Pin",
+    "grade": "Hot-dip Galvanized",
+    "description": "D Shackle - Screw Pin, supplied in Hot-dip Galvanized, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/lifting-marine-hardware/d-shackle-screw-pin.webp",
+    "order": 0
+  },
+  {
+    "id": "lifting-marine-hardware--bow-shackle-screw-pin",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "bow-shackle-screw-pin",
+    "name": "Bow Shackle - Screw Pin",
+    "grade": "Hot-dip Galvanized",
+    "description": "Bow Shackle - Screw Pin, supplied in Hot-dip Galvanized, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/lifting-marine-hardware/bow-shackle-screw-pin.webp",
+    "order": 1
+  },
+  {
+    "id": "lifting-marine-hardware--wire-rope-clip",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "wire-rope-clip",
+    "name": "Wire Rope Clip",
+    "grade": "Hot-dip Galvanized",
+    "description": "Wire Rope Clip, supplied in Hot-dip Galvanized, stocked by Sabta Trading for wire rope rigging and lifting assemblies.",
+    "image": "/products/lifting-marine-hardware/wire-rope-clip.webp",
+    "order": 2
+  },
+  {
+    "id": "lifting-marine-hardware--cargo-latch-kit",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "cargo-latch-kit",
+    "name": "Cargo Latch Kit",
+    "grade": "GI",
+    "description": "Cargo Latch Kit, supplied in GI, stocked by Sabta Trading for heavy lifting, load-binding and marine or off-shore rigging.",
+    "image": "/products/lifting-marine-hardware/cargo-latch-kit.webp",
+    "order": 3
+  },
+  {
+    "id": "lifting-marine-hardware--d-shackle-bolt-type",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "d-shackle-bolt-type",
+    "name": "D Shackle - Bolt Type",
+    "grade": "Hot-dip Galvanized",
+    "description": "D Shackle - Bolt Type, supplied in Hot-dip Galvanized, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/lifting-marine-hardware/d-shackle-bolt-type.webp",
+    "order": 4
+  },
+  {
+    "id": "lifting-marine-hardware--bow-shackle-bolt-type",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "bow-shackle-bolt-type",
+    "name": "Bow Shackle - Bolt Type",
+    "grade": "Hot-dip Galvanized",
+    "description": "Bow Shackle - Bolt Type, supplied in Hot-dip Galvanized, stocked by Sabta Trading for connecting rigging hardware and lifting slings.",
+    "image": "/products/lifting-marine-hardware/bow-shackle-bolt-type.webp",
+    "order": 5,
+    "featured": true
+  },
+  {
+    "id": "lifting-marine-hardware--320a-eye-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "320a-eye-hook",
+    "name": "320A Eye Hook",
+    "grade": "GI, Alloy",
+    "description": "320A Eye Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/320a-eye-hook.webp",
+    "order": 6
+  },
+  {
+    "id": "lifting-marine-hardware--g80-connecting-link",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "g80-connecting-link",
+    "name": "G80 Connecting Link",
+    "grade": "GI, Alloy",
+    "description": "G80 Connecting Link, supplied in GI, Alloy, stocked by Sabta Trading for heavy lifting, load-binding and marine or off-shore rigging.",
+    "image": "/products/lifting-marine-hardware/g80-connecting-link.webp",
+    "order": 7
+  },
+  {
+    "id": "lifting-marine-hardware--g70-clevis-grab-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "g70-clevis-grab-hook",
+    "name": "G70 Clevis Grab Hook",
+    "grade": "GI, Alloy",
+    "description": "G70 Clevis Grab Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/g70-clevis-grab-hook.webp",
+    "order": 8
+  },
+  {
+    "id": "lifting-marine-hardware--322a-swivel-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "322a-swivel-hook",
+    "name": "322A Swivel Hook",
+    "grade": "GI, Alloy",
+    "description": "322A Swivel Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/322a-swivel-hook.webp",
+    "order": 9
+  },
+  {
+    "id": "lifting-marine-hardware--g80-clevis-sling-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "g80-clevis-sling-hook",
+    "name": "G80 Clevis Sling Hook",
+    "grade": "GI, Alloy",
+    "description": "G80 Clevis Sling Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/g80-clevis-sling-hook.webp",
+    "order": 10
+  },
+  {
+    "id": "lifting-marine-hardware--g80-clevis-self-locking-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "g80-clevis-self-locking-hook",
+    "name": "G80 Clevis Self Locking Hook",
+    "grade": "GI, Alloy",
+    "description": "G80 Clevis Self Locking Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/g80-clevis-self-locking-hook.webp",
+    "order": 11
+  },
+  {
+    "id": "lifting-marine-hardware--master-link",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "master-link",
+    "name": "Master Link",
+    "grade": "GI, Alloy",
+    "description": "Master Link, supplied in GI, Alloy, stocked by Sabta Trading for joining multi-leg chain slings to a lifting hook.",
+    "image": "/products/lifting-marine-hardware/master-link.webp",
+    "order": 12
+  },
+  {
+    "id": "lifting-marine-hardware--load-binder-lever-type",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "load-binder-lever-type",
+    "name": "Load Binder Lever Type",
+    "grade": "GI, Alloy",
+    "description": "Load Binder Lever Type, supplied in GI, Alloy, stocked by Sabta Trading for tensioning and securing chain lashings.",
+    "image": "/products/lifting-marine-hardware/load-binder-lever-type.webp",
+    "order": 13
+  },
+  {
+    "id": "lifting-marine-hardware--g80-eye-self-locking-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "g80-eye-self-locking-hook",
+    "name": "G80 Eye Self Locking Hook",
+    "grade": "GI, Alloy",
+    "description": "G80 Eye Self Locking Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/g80-eye-self-locking-hook.webp",
+    "order": 14
+  },
+  {
+    "id": "lifting-marine-hardware--shortening-clutch",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "shortening-clutch",
+    "name": "Shortening Clutch",
+    "grade": "GI, Alloy",
+    "description": "Shortening Clutch, supplied in GI, Alloy, stocked by Sabta Trading for heavy lifting, load-binding and marine or off-shore rigging.",
+    "image": "/products/lifting-marine-hardware/shortening-clutch.webp",
+    "order": 15
+  },
+  {
+    "id": "lifting-marine-hardware--load-binder-ratchet-type",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "load-binder-ratchet-type",
+    "name": "Load Binder Ratchet Type",
+    "grade": "GI, Alloy",
+    "description": "Load Binder Ratchet Type, supplied in GI, Alloy, stocked by Sabta Trading for tensioning and securing chain lashings.",
+    "image": "/products/lifting-marine-hardware/load-binder-ratchet-type.webp",
+    "order": 16
+  },
+  {
+    "id": "lifting-marine-hardware--rotating-self-locking-hook",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "rotating-self-locking-hook",
+    "name": "Rotating Self Locking Hook",
+    "grade": "GI, Alloy",
+    "description": "Rotating Self Locking Hook, supplied in GI, Alloy, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/lifting-marine-hardware/rotating-self-locking-hook.webp",
+    "order": 17
+  },
+  {
+    "id": "lifting-marine-hardware--g80-ms-chain",
+    "categorySlug": "lifting-marine-hardware",
+    "slug": "g80-ms-chain",
+    "name": "G80 MS Chain",
+    "grade": "G80",
+    "description": "G80 MS Chain, supplied in G80, stocked by Sabta Trading for chain rigging, lashing and lifting assemblies.",
+    "image": "/products/lifting-marine-hardware/g80-ms-chain.webp",
+    "order": 18
+  },
+  {
+    "id": "clips-pins--circlip-external-din471",
+    "categorySlug": "clips-pins",
+    "slug": "circlip-external-din471",
+    "name": "Circlip External - DIN471",
+    "grade": "MS, 304",
+    "description": "Circlip External - DIN471, supplied in MS, 304, stocked by Sabta Trading for retaining components on a shaft or in a bore.",
+    "image": "/products/clips-pins/circlip-external-din471.webp",
+    "order": 0
+  },
+  {
+    "id": "clips-pins--circlip-internal-din472",
+    "categorySlug": "clips-pins",
+    "slug": "circlip-internal-din472",
+    "name": "Circlip Internal - DIN472",
+    "grade": "MS, 304",
+    "description": "Circlip Internal - DIN472, supplied in MS, 304, stocked by Sabta Trading for retaining components on a shaft or in a bore.",
+    "image": "/products/clips-pins/circlip-internal-din472.webp",
+    "order": 1
+  },
+  {
+    "id": "clips-pins--spring-tension-pin",
+    "categorySlug": "clips-pins",
+    "slug": "spring-tension-pin",
+    "name": "Spring Tension Pin",
+    "grade": "MS, 304",
+    "description": "Spring Tension Pin, supplied in MS, 304, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/spring-tension-pin.webp",
+    "order": 2
+  },
+  {
+    "id": "clips-pins--snap-ring-external",
+    "categorySlug": "clips-pins",
+    "slug": "snap-ring-external",
+    "name": "Snap Ring External",
+    "grade": "MS",
+    "description": "Snap Ring External, supplied in MS, stocked by Sabta Trading for retaining components on a shaft or in a bore.",
+    "image": "/products/clips-pins/snap-ring-external.webp",
+    "order": 3
+  },
+  {
+    "id": "clips-pins--e-clips",
+    "categorySlug": "clips-pins",
+    "slug": "e-clips",
+    "name": "E Clips",
+    "grade": "MS, 304",
+    "description": "E Clips, supplied in MS, 304, stocked by Sabta Trading for shaft retention and quick-release assembly work.",
+    "image": "/products/clips-pins/e-clips.webp",
+    "order": 4
+  },
+  {
+    "id": "clips-pins--spiral-pin",
+    "categorySlug": "clips-pins",
+    "slug": "spiral-pin",
+    "name": "Spiral Pin",
+    "grade": "MS",
+    "description": "Spiral Pin, supplied in MS, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/spiral-pin.webp",
+    "order": 5
+  },
+  {
+    "id": "clips-pins--hitch-pin",
+    "categorySlug": "clips-pins",
+    "slug": "hitch-pin",
+    "name": "Hitch Pin",
+    "grade": "Yellow",
+    "description": "Hitch Pin, supplied in Yellow, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/hitch-pin.webp",
+    "order": 6
+  },
+  {
+    "id": "clips-pins--solid-dowel-pin",
+    "categorySlug": "clips-pins",
+    "slug": "solid-dowel-pin",
+    "name": "Solid Dowel Pin",
+    "grade": "8",
+    "description": "Solid Dowel Pin, supplied in 8, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/solid-dowel-pin.webp",
+    "order": 7
+  },
+  {
+    "id": "clips-pins--table-lock-pin-round",
+    "categorySlug": "clips-pins",
+    "slug": "table-lock-pin-round",
+    "name": "Table Lock Pin Round",
+    "grade": "GI",
+    "description": "Table Lock Pin Round, supplied in GI, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/table-lock-pin-round.webp",
+    "order": 8
+  },
+  {
+    "id": "clips-pins--clevis-pin",
+    "categorySlug": "clips-pins",
+    "slug": "clevis-pin",
+    "name": "Clevis Pin",
+    "grade": "Yellow",
+    "description": "Clevis Pin, supplied in Yellow, stocked by Sabta Trading for pin-connecting rigging and lifting hardware.",
+    "image": "/products/clips-pins/clevis-pin.webp",
+    "order": 9
+  },
+  {
+    "id": "clips-pins--quick-release-pin",
+    "categorySlug": "clips-pins",
+    "slug": "quick-release-pin",
+    "name": "Quick Release Pin",
+    "grade": "GI",
+    "description": "Quick Release Pin, supplied in GI, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/quick-release-pin.webp",
+    "order": 10
+  },
+  {
+    "id": "clips-pins--table-lock-pin-square",
+    "categorySlug": "clips-pins",
+    "slug": "table-lock-pin-square",
+    "name": "Table Lock Pin Square",
+    "grade": "GI",
+    "description": "Table Lock Pin Square, supplied in GI, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/table-lock-pin-square.webp",
+    "order": 11
+  },
+  {
+    "id": "clips-pins--table-lock-pin-square-with-eye",
+    "categorySlug": "clips-pins",
+    "slug": "table-lock-pin-square-with-eye",
+    "name": "Table Lock Pin Square With Eye",
+    "grade": "GI",
+    "description": "Table Lock Pin Square With Eye, supplied in GI, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/table-lock-pin-square-with-eye.webp",
+    "order": 12
+  },
+  {
+    "id": "clips-pins--lynch-pin",
+    "categorySlug": "clips-pins",
+    "slug": "lynch-pin",
+    "name": "Lynch Pin",
+    "grade": "Yellow, 304",
+    "description": "Lynch Pin, supplied in Yellow, 304, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/lynch-pin.webp",
+    "order": 13
+  },
+  {
+    "id": "clips-pins--tube-pin",
+    "categorySlug": "clips-pins",
+    "slug": "tube-pin",
+    "name": "Tube Pin",
+    "grade": "GI",
+    "description": "Tube Pin, supplied in GI, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/tube-pin.webp",
+    "order": 14
+  },
+  {
+    "id": "clips-pins--split-pin-cotter-pin",
+    "categorySlug": "clips-pins",
+    "slug": "split-pin-cotter-pin",
+    "name": "Split Pin / Cotter Pin",
+    "grade": "GI, 304",
+    "description": "Split Pin / Cotter Pin, supplied in GI, 304, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/split-pin-cotter-pin.webp",
+    "order": 15
+  },
+  {
+    "id": "clips-pins--industrial-safety-pin",
+    "categorySlug": "clips-pins",
+    "slug": "industrial-safety-pin",
+    "name": "Industrial Safety Pin",
+    "grade": "GI, 304",
+    "description": "Industrial Safety Pin, supplied in GI, 304, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/industrial-safety-pin.webp",
+    "order": 16
+  },
+  {
+    "id": "clips-pins--r-pin-double-ring-r-pin",
+    "categorySlug": "clips-pins",
+    "slug": "r-pin-double-ring-r-pin",
+    "name": "R Pin / Double Ring R Pin",
+    "grade": "GI, 304",
+    "description": "R Pin / Double Ring R Pin, supplied in GI, 304, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/clips-pins/r-pin-double-ring-r-pin.webp",
+    "order": 17
+  },
+  {
+    "id": "bolts-screws--roofing-bolt",
+    "categorySlug": "bolts-screws",
+    "slug": "roofing-bolt",
+    "name": "Roofing Bolt",
+    "grade": "8.8, 304",
+    "description": "Roofing Bolt, supplied in 8.8, 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/roofing-bolt.webp",
+    "order": 0
+  },
+  {
+    "id": "bolts-screws--wing-bolt-din316",
+    "categorySlug": "bolts-screws",
+    "slug": "wing-bolt-din316",
+    "name": "Wing Bolt - DIN316",
+    "grade": "GI, 304",
+    "description": "Wing Bolt - DIN316, supplied in GI, 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/wing-bolt-din316.webp",
+    "order": 1
+  },
+  {
+    "id": "bolts-screws--hex-bolt-din931-933",
+    "categorySlug": "bolts-screws",
+    "slug": "hex-bolt-din931-933",
+    "name": "Hex Bolt - DIN931/933",
+    "grade": "8.8, 10.9, 12.9, 304, 316",
+    "description": "Hex Bolt - DIN931/933, supplied in 8.8, 10.9, 12.9, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/hex-bolt-din931-933.webp",
+    "order": 2
+  },
+  {
+    "id": "bolts-screws--t-slot-bolt",
+    "categorySlug": "bolts-screws",
+    "slug": "t-slot-bolt",
+    "name": "T Slot Bolt",
+    "grade": "304",
+    "description": "T Slot Bolt, supplied in 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/t-slot-bolt.webp",
+    "order": 3
+  },
+  {
+    "id": "bolts-screws--carriage-bolt",
+    "categorySlug": "bolts-screws",
+    "slug": "carriage-bolt",
+    "name": "Carriage Bolt",
+    "grade": "8.8, 304",
+    "description": "Carriage Bolt, supplied in 8.8, 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/carriage-bolt.webp",
+    "order": 4,
+    "featured": true
+  },
+  {
+    "id": "bolts-screws--flange-bolt-din6921",
+    "categorySlug": "bolts-screws",
+    "slug": "flange-bolt-din6921",
+    "name": "Flange Bolt - DIN6921",
+    "grade": "GI, 304",
+    "description": "Flange Bolt - DIN6921, supplied in GI, 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/flange-bolt-din6921.webp",
+    "order": 5
+  },
+  {
+    "id": "bolts-screws--socket-pressure-plug-din986",
+    "categorySlug": "bolts-screws",
+    "slug": "socket-pressure-plug-din986",
+    "name": "Socket Pressure Plug - DIN986",
+    "grade": "12.9, 304",
+    "description": "Socket Pressure Plug - DIN986, supplied in 12.9, 304, stocked by Sabta Trading for general mechanical fastening and assembly.",
+    "image": "/products/bolts-screws/socket-pressure-plug-din986.webp",
+    "order": 6
+  },
+  {
+    "id": "bolts-screws--threaded-bar-din975",
+    "categorySlug": "bolts-screws",
+    "slug": "threaded-bar-din975",
+    "name": "Threaded Bar - DIN975",
+    "grade": "8.8, B7, 304, 316",
+    "description": "Threaded Bar - DIN975, supplied in 8.8, B7, 304, 316, stocked by Sabta Trading for general mechanical fastening and assembly.",
+    "image": "/products/bolts-screws/threaded-bar-din975.webp",
+    "order": 7
+  },
+  {
+    "id": "bolts-screws--full-threaded-stud-bolt",
+    "categorySlug": "bolts-screws",
+    "slug": "full-threaded-stud-bolt",
+    "name": "Full Threaded Stud Bolt",
+    "grade": "8.8, B7, 304, 316",
+    "description": "Full Threaded Stud Bolt, supplied in 8.8, B7, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/full-threaded-stud-bolt.webp",
+    "order": 8
+  },
+  {
+    "id": "bolts-screws--low-head-socket-cap-screw",
+    "categorySlug": "bolts-screws",
+    "slug": "low-head-socket-cap-screw",
+    "name": "Low Head Socket Cap Screw",
+    "grade": "12.9, 304",
+    "description": "Low Head Socket Cap Screw, supplied in 12.9, 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/low-head-socket-cap-screw.webp",
+    "order": 9
+  },
+  {
+    "id": "bolts-screws--engineering-stud-bolt",
+    "categorySlug": "bolts-screws",
+    "slug": "engineering-stud-bolt",
+    "name": "Engineering Stud Bolt",
+    "grade": "8.8, B7, 304, 316",
+    "description": "Engineering Stud Bolt, supplied in 8.8, B7, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/engineering-stud-bolt.webp",
+    "order": 10
+  },
+  {
+    "id": "bolts-screws--socket-cap-screw-din912",
+    "categorySlug": "bolts-screws",
+    "slug": "socket-cap-screw-din912",
+    "name": "Socket Cap Screw - DIN912",
+    "grade": "8.8, 12.9, 304, 316",
+    "description": "Socket Cap Screw - DIN912, supplied in 8.8, 12.9, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/socket-cap-screw-din912.webp",
+    "order": 11
+  },
+  {
+    "id": "bolts-screws--copper-weld-stud",
+    "categorySlug": "bolts-screws",
+    "slug": "copper-weld-stud",
+    "name": "Copper Weld Stud",
+    "grade": "8.8, 304, 316",
+    "description": "Copper Weld Stud, supplied in 8.8, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/copper-weld-stud.webp",
+    "order": 12
+  },
+  {
+    "id": "bolts-screws--pan-head-machine-screw",
+    "categorySlug": "bolts-screws",
+    "slug": "pan-head-machine-screw",
+    "name": "Pan Head Machine Screw",
+    "grade": "8.8, 304, 316",
+    "description": "Pan Head Machine Screw, supplied in 8.8, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/pan-head-machine-screw.webp",
+    "order": 13
+  },
+  {
+    "id": "bolts-screws--weld-stud",
+    "categorySlug": "bolts-screws",
+    "slug": "weld-stud",
+    "name": "Weld Stud",
+    "grade": "304",
+    "description": "Weld Stud, supplied in 304, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/weld-stud.webp",
+    "order": 14
+  },
+  {
+    "id": "bolts-screws--u-bolt",
+    "categorySlug": "bolts-screws",
+    "slug": "u-bolt",
+    "name": "U Bolt",
+    "grade": "8.8, 304, 316",
+    "description": "U Bolt, supplied in 8.8, 304, 316, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/bolts-screws/u-bolt.webp",
+    "order": 15
+  },
+  {
+    "id": "bolts-screws--csk-machine-screw-pin",
+    "categorySlug": "bolts-screws",
+    "slug": "csk-machine-screw-pin",
+    "name": "CSK Machine Screw Pin",
+    "grade": "8.8, 304, 316",
+    "description": "CSK Machine Screw Pin, supplied in 8.8, 304, 316, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
+    "image": "/products/bolts-screws/csk-machine-screw-pin.webp",
+    "order": 16
+  },
+  {
+    "id": "nuts--cage-nut",
+    "categorySlug": "nuts",
+    "slug": "cage-nut",
+    "name": "Cage Nut",
+    "grade": "GI, 304",
+    "description": "Cage Nut, supplied in GI, 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/cage-nut.webp",
+    "order": 0
+  },
+  {
+    "id": "nuts--hex-nut-din934",
+    "categorySlug": "nuts",
+    "slug": "hex-nut-din934",
+    "name": "Hex Nut - DIN934",
+    "grade": "8.8, 10.9, 2H, 304, 316",
+    "description": "Hex Nut - DIN934, supplied in 8.8, 10.9, 2H, 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/hex-nut-din934.webp",
+    "order": 1,
+    "featured": true
+  },
+  {
+    "id": "nuts--lock-nut-din985",
+    "categorySlug": "nuts",
+    "slug": "lock-nut-din985",
+    "name": "Lock Nut - DIN985",
+    "grade": "8.8, 304, 316",
+    "description": "Lock Nut - DIN985, supplied in 8.8, 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/lock-nut-din985.webp",
+    "order": 2
+  },
+  {
+    "id": "nuts--spring-nut",
+    "categorySlug": "nuts",
+    "slug": "spring-nut",
+    "name": "Spring Nut",
+    "grade": "8.8, 304, 316",
+    "description": "Spring Nut, supplied in 8.8, 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/spring-nut.webp",
+    "order": 3
+  },
+  {
+    "id": "nuts--pal-nut-din7967",
+    "categorySlug": "nuts",
+    "slug": "pal-nut-din7967",
+    "name": "Pal Nut - DIN7967",
+    "grade": "GI, 304",
+    "description": "Pal Nut - DIN7967, supplied in GI, 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/pal-nut-din7967.webp",
+    "order": 4
+  },
+  {
+    "id": "nuts--hex-cap-nut-din1587",
+    "categorySlug": "nuts",
+    "slug": "hex-cap-nut-din1587",
+    "name": "Hex Cap Nut - DIN1587",
+    "grade": "8.8, 304, 316",
+    "description": "Hex Cap Nut - DIN1587, supplied in 8.8, 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/hex-cap-nut-din1587.webp",
+    "order": 5
+  },
+  {
+    "id": "nuts--rivet-nut",
+    "categorySlug": "nuts",
+    "slug": "rivet-nut",
+    "name": "Rivet Nut",
+    "grade": "GI, 304",
+    "description": "Rivet Nut, supplied in GI, 304, stocked by Sabta Trading for permanent fastening of sheet and panel materials.",
+    "image": "/products/nuts/rivet-nut.webp",
+    "order": 6
+  },
+  {
+    "id": "nuts--castle-nut",
+    "categorySlug": "nuts",
+    "slug": "castle-nut",
+    "name": "Castle Nut",
+    "grade": "8.8, 304",
+    "description": "Castle Nut, supplied in 8.8, 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/castle-nut.webp",
+    "order": 7
+  },
+  {
+    "id": "nuts--flange-nut-din6923",
+    "categorySlug": "nuts",
+    "slug": "flange-nut-din6923",
+    "name": "Flange Nut - DIN6923",
+    "grade": "GI, 304, 316",
+    "description": "Flange Nut - DIN6923, supplied in GI, 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/flange-nut-din6923.webp",
+    "order": 8
+  },
+  {
+    "id": "nuts--wing-nut-din315",
+    "categorySlug": "nuts",
+    "slug": "wing-nut-din315",
+    "name": "Wing Nut - DIN315",
+    "grade": "GI, 304",
+    "description": "Wing Nut - DIN315, supplied in GI, 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/wing-nut-din315.webp",
+    "order": 9
+  },
+  {
+    "id": "nuts--teeth-nut-din1624",
+    "categorySlug": "nuts",
+    "slug": "teeth-nut-din1624",
+    "name": "Teeth Nut - DIN1624",
+    "grade": "GI, 304, 316",
+    "description": "Teeth Nut - DIN1624, supplied in GI, 304, 316, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/teeth-nut-din1624.webp",
+    "order": 10
+  },
+  {
+    "id": "nuts--reduced-head-rivet-nut",
+    "categorySlug": "nuts",
+    "slug": "reduced-head-rivet-nut",
+    "name": "Reduced Head Rivet Nut",
+    "grade": "GI, 304",
+    "description": "Reduced Head Rivet Nut, supplied in GI, 304, stocked by Sabta Trading for permanent fastening of sheet and panel materials.",
+    "image": "/products/nuts/reduced-head-rivet-nut.webp",
+    "order": 11
+  },
+  {
+    "id": "nuts--clip-nut",
+    "categorySlug": "nuts",
+    "slug": "clip-nut",
+    "name": "Clip Nut",
+    "grade": "GI",
+    "description": "Clip Nut, supplied in GI, stocked by Sabta Trading for clamping hose, cable, pipe or grating in place.",
+    "image": "/products/nuts/clip-nut.webp",
+    "order": 12
+  },
+  {
+    "id": "nuts--pvc-bolt-cap",
+    "categorySlug": "nuts",
+    "slug": "pvc-bolt-cap",
+    "name": "PVC Bolt Cap",
+    "grade": "Black, White, Grey",
+    "description": "PVC Bolt Cap, supplied in Black, White, Grey, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/nuts/pvc-bolt-cap.webp",
+    "order": 13
+  },
+  {
+    "id": "nuts--full-steel-lock-nut",
+    "categorySlug": "nuts",
+    "slug": "full-steel-lock-nut",
+    "name": "Full Steel Lock Nut",
+    "grade": "GI",
+    "description": "Full Steel Lock Nut, supplied in GI, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/full-steel-lock-nut.webp",
+    "order": 14
+  },
+  {
+    "id": "nuts--k-nut",
+    "categorySlug": "nuts",
+    "slug": "k-nut",
+    "name": "K Nut",
+    "grade": "SS 304",
+    "description": "K Nut, supplied in SS 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/k-nut.webp",
+    "order": 15
+  },
+  {
+    "id": "nuts--captive-nut",
+    "categorySlug": "nuts",
+    "slug": "captive-nut",
+    "name": "Captive Nut",
+    "grade": "GI",
+    "description": "Captive Nut, supplied in GI, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/captive-nut.webp",
+    "order": 16
+  },
+  {
+    "id": "nuts--conical-lock-nut",
+    "categorySlug": "nuts",
+    "slug": "conical-lock-nut",
+    "name": "Conical Lock Nut",
+    "grade": "GI",
+    "description": "Conical Lock Nut, supplied in GI, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/conical-lock-nut.webp",
+    "order": 17
+  },
+  {
+    "id": "nuts--km-lock-nut",
+    "categorySlug": "nuts",
+    "slug": "km-lock-nut",
+    "name": "KM Lock Nut",
+    "grade": "MS, SS 304",
+    "description": "KM Lock Nut, supplied in MS, SS 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/km-lock-nut.webp",
+    "order": 18
+  },
+  {
+    "id": "nuts--t-slide-nut",
+    "categorySlug": "nuts",
+    "slug": "t-slide-nut",
+    "name": "T Slide Nut",
+    "grade": "SS 304",
+    "description": "T Slide Nut, supplied in SS 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/t-slide-nut.webp",
+    "order": 19
+  },
+  {
+    "id": "nuts--square-nut",
+    "categorySlug": "nuts",
+    "slug": "square-nut",
+    "name": "Square Nut",
+    "grade": "SS 304",
+    "description": "Square Nut, supplied in SS 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/square-nut.webp",
+    "order": 20
+  },
+  {
+    "id": "nuts--coupling-nut",
+    "categorySlug": "nuts",
+    "slug": "coupling-nut",
+    "name": "Coupling Nut",
+    "grade": "GI, SS 304",
+    "description": "Coupling Nut, supplied in GI, SS 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/coupling-nut.webp",
+    "order": 21
+  },
+  {
+    "id": "nuts--weld-nut",
+    "categorySlug": "nuts",
+    "slug": "weld-nut",
+    "name": "Weld Nut",
+    "grade": "SS 304",
+    "description": "Weld Nut, supplied in SS 304, stocked by Sabta Trading for securing and locking a threaded fastener in place.",
+    "image": "/products/nuts/weld-nut.webp",
+    "order": 22
+  },
+  {
+    "id": "nuts--thin-nuts",
+    "categorySlug": "nuts",
+    "slug": "thin-nuts",
+    "name": "Thin Nuts",
+    "grade": "GI, SS 304",
+    "description": "Thin Nuts, supplied in GI, SS 304, stocked by Sabta Trading for fastening and locking threaded joints.",
+    "image": "/products/nuts/thin-nuts.webp",
+    "order": 23
+  },
+  {
+    "id": "washers--contact-washer-nfe25511",
+    "categorySlug": "washers",
+    "slug": "contact-washer-nfe25511",
+    "name": "Contact Washer - NFE25511",
+    "grade": "GI, 304",
+    "description": "Contact Washer - NFE25511, supplied in GI, 304, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/contact-washer-nfe25511.webp",
+    "order": 0
+  },
+  {
+    "id": "washers--flat-washer",
+    "categorySlug": "washers",
+    "slug": "flat-washer",
+    "name": "Flat Washer",
+    "grade": "8.8, 304, 316",
+    "description": "Flat Washer, supplied in 8.8, 304, 316, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/flat-washer.webp",
+    "order": 1
+  },
+  {
+    "id": "washers--starlock-washer",
+    "categorySlug": "washers",
+    "slug": "starlock-washer",
+    "name": "Starlock Washer",
+    "grade": "Bronze, 304",
+    "description": "Starlock Washer, supplied in Bronze, 304, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/starlock-washer.webp",
+    "order": 2,
+    "featured": true
+  },
+  {
+    "id": "washers--serrated-washer",
+    "categorySlug": "washers",
+    "slug": "serrated-washer",
+    "name": "Serrated Washer",
+    "grade": "GI, 304",
+    "description": "Serrated Washer, supplied in GI, 304, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/serrated-washer.webp",
+    "order": 3
+  },
+  {
+    "id": "washers--spring-washer-din127",
+    "categorySlug": "washers",
+    "slug": "spring-washer-din127",
+    "name": "Spring Washer - DIN127",
+    "grade": "8.8, 304, 316",
+    "description": "Spring Washer - DIN127, supplied in 8.8, 304, 316, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/spring-washer-din127.webp",
+    "order": 4
+  },
+  {
+    "id": "washers--nordlock-washer-nfe25201",
+    "categorySlug": "washers",
+    "slug": "nordlock-washer-nfe25201",
+    "name": "Nordlock Washer - NFE25201",
+    "grade": "HDG, 304",
+    "description": "Nordlock Washer - NFE25201, supplied in HDG, 304, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/nordlock-washer-nfe25201.webp",
+    "order": 5
+  },
+  {
+    "id": "washers--copper-washer",
+    "categorySlug": "washers",
+    "slug": "copper-washer",
+    "name": "Copper Washer",
+    "grade": "MS",
+    "description": "Copper Washer, supplied in MS, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/copper-washer.webp",
+    "order": 6
+  },
+  {
+    "id": "washers--aluminum-washer",
+    "categorySlug": "washers",
+    "slug": "aluminum-washer",
+    "name": "Aluminum Washer",
+    "grade": "MS",
+    "description": "Aluminum Washer, supplied in MS, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/aluminum-washer.webp",
+    "order": 7
+  },
+  {
+    "id": "washers--disc-washer",
+    "categorySlug": "washers",
+    "slug": "disc-washer",
+    "name": "Disc Washer",
+    "grade": "MS",
+    "description": "Disc Washer, supplied in MS, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/disc-washer.webp",
+    "order": 8
+  },
+  {
+    "id": "washers--bonded-seal-washer",
+    "categorySlug": "washers",
+    "slug": "bonded-seal-washer",
+    "name": "Bonded Seal Washer",
+    "grade": "MS",
+    "description": "Bonded Seal Washer, supplied in MS, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/bonded-seal-washer.webp",
+    "order": 9
+  },
+  {
+    "id": "washers--shim-washer",
+    "categorySlug": "washers",
+    "slug": "shim-washer",
+    "name": "Shim Washer",
+    "grade": "GI",
+    "description": "Shim Washer, supplied in GI, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/shim-washer.webp",
+    "order": 10
+  },
+  {
+    "id": "washers--mb-lock-washer",
+    "categorySlug": "washers",
+    "slug": "mb-lock-washer",
+    "name": "MB Lock Washer",
+    "grade": "MS",
+    "description": "MB Lock Washer, supplied in MS, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/mb-lock-washer.webp",
+    "order": 11
+  },
+  {
+    "id": "washers--wave-washer",
+    "categorySlug": "washers",
+    "slug": "wave-washer",
+    "name": "Wave Washer",
+    "grade": "MS",
+    "description": "Wave Washer, supplied in MS, stocked by Sabta Trading for distributing load and preventing a bolted joint from loosening.",
+    "image": "/products/washers/wave-washer.webp",
+    "order": 12
+  },
+  {
+    "id": "misc-hardware--grease-nipple-cap",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-nipple-cap",
+    "name": "Grease Nipple Cap",
+    "grade": "GI (Green & Red)",
+    "description": "Grease Nipple Cap, supplied in GI (Green & Red), stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-nipple-cap.webp",
+    "order": 0
+  },
+  {
+    "id": "misc-hardware--grease-nipple-button-head",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-nipple-button-head",
+    "name": "Grease Nipple Button Head",
+    "grade": "GI, 304",
+    "description": "Grease Nipple Button Head, supplied in GI, 304, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-nipple-button-head.webp",
+    "order": 1
+  },
+  {
+    "id": "misc-hardware--grease-nipple",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-nipple",
+    "name": "Grease Nipple",
+    "grade": "GI, 304",
+    "description": "Grease Nipple, supplied in GI, 304, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-nipple.webp",
+    "order": 2
+  },
+  {
+    "id": "misc-hardware--long-grease-nipple",
+    "categorySlug": "misc-hardware",
+    "slug": "long-grease-nipple",
+    "name": "Long Grease Nipple",
+    "grade": "GI",
+    "description": "Long Grease Nipple, supplied in GI, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/long-grease-nipple.webp",
+    "order": 3
+  },
+  {
+    "id": "misc-hardware--grease-nipple-cup",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-nipple-cup",
+    "name": "Grease Nipple Cup",
+    "grade": "GI",
+    "description": "Grease Nipple Cup, supplied in GI, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-nipple-cup.webp",
+    "order": 4
+  },
+  {
+    "id": "misc-hardware--grease-adaptor",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-adaptor",
+    "name": "Grease Adaptor",
+    "grade": "GI",
+    "description": "Grease Adaptor, supplied in GI, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-adaptor.webp",
+    "order": 5
+  },
+  {
+    "id": "misc-hardware--grease-adaptor-button-head-elbow",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-adaptor-button-head-elbow",
+    "name": "Grease Adaptor - Button Head (Elbow)",
+    "grade": "Brass",
+    "description": "Grease Adaptor - Button Head (Elbow), supplied in Brass, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-adaptor-button-head-elbow.webp",
+    "order": 6
+  },
+  {
+    "id": "misc-hardware--grease-adaptor-pin-type",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-adaptor-pin-type",
+    "name": "Grease Adaptor Pin Type",
+    "grade": "Brass",
+    "description": "Grease Adaptor Pin Type, supplied in Brass, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-adaptor-pin-type.webp",
+    "order": 7
+  },
+  {
+    "id": "misc-hardware--grease-adaptor-button-head-straight",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-adaptor-button-head-straight",
+    "name": "Grease Adaptor - Button Head (Straight)",
+    "grade": "Brass",
+    "description": "Grease Adaptor - Button Head (Straight), supplied in Brass, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-adaptor-button-head-straight.webp",
+    "order": 8
+  },
+  {
+    "id": "misc-hardware--grease-nipple-hose",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-nipple-hose",
+    "name": "Grease Nipple Hose",
+    "grade": "GI",
+    "description": "Grease Nipple Hose, supplied in GI, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-nipple-hose.webp",
+    "order": 9
+  },
+  {
+    "id": "misc-hardware--grease-nipple-pin-type",
+    "categorySlug": "misc-hardware",
+    "slug": "grease-nipple-pin-type",
+    "name": "Grease Nipple Pin Type",
+    "grade": "Nickel",
+    "description": "Grease Nipple Pin Type, supplied in Nickel, stocked by Sabta Trading for lubricating bearings and moving machinery parts.",
+    "image": "/products/misc-hardware/grease-nipple-pin-type.webp",
+    "order": 10
+  },
+  {
+    "id": "misc-hardware--banjo-bolt",
+    "categorySlug": "misc-hardware",
+    "slug": "banjo-bolt",
+    "name": "Banjo Bolt",
+    "grade": "GI",
+    "description": "Banjo Bolt, supplied in GI, stocked by Sabta Trading for fastening components together.",
+    "image": "/products/misc-hardware/banjo-bolt.webp",
+    "order": 11
+  },
+  {
+    "id": "misc-hardware--hex-die",
+    "categorySlug": "misc-hardware",
+    "slug": "hex-die",
+    "name": "Hex Die",
+    "standard": "Standard, Fine Thread",
+    "description": "Hex Die, supplied (Standard, Fine Thread), stocked by Sabta Trading for cutting external and internal screw threads.",
+    "image": "/products/misc-hardware/hex-die.webp",
+    "order": 12
+  },
+  {
+    "id": "misc-hardware--threading-taps",
+    "categorySlug": "misc-hardware",
+    "slug": "threading-taps",
+    "name": "Threading Taps",
+    "standard": "Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF",
+    "description": "Threading Taps, supplied (Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF), stocked by Sabta Trading for cutting external and internal screw threads.",
+    "image": "/products/misc-hardware/threading-taps.webp",
+    "order": 13
+  },
+  {
+    "id": "misc-hardware--round-die-handle",
+    "categorySlug": "misc-hardware",
+    "slug": "round-die-handle",
+    "name": "Round Die Handle",
+    "standard": "Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF",
+    "description": "Round Die Handle, supplied (Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF), stocked by Sabta Trading for cutting external and internal screw threads.",
+    "image": "/products/misc-hardware/round-die-handle.webp",
+    "order": 14
+  },
+  {
+    "id": "misc-hardware--hammering-rivet",
+    "categorySlug": "misc-hardware",
+    "slug": "hammering-rivet",
+    "name": "Hammering Rivet",
+    "grade": "GI, 304",
+    "description": "Hammering Rivet, supplied in GI, 304, stocked by Sabta Trading for permanent fastening of sheet and panel materials.",
+    "image": "/products/misc-hardware/hammering-rivet.webp",
+    "order": 15
+  },
+  {
+    "id": "misc-hardware--round-die-die-nut",
+    "categorySlug": "misc-hardware",
+    "slug": "round-die-die-nut",
+    "name": "Round Die (Die Nut)",
+    "standard": "Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF",
+    "description": "Round Die (Die Nut), supplied (Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF), stocked by Sabta Trading for cutting external and internal screw threads.",
+    "image": "/products/misc-hardware/round-die-die-nut.webp",
+    "order": 16
+  },
+  {
+    "id": "misc-hardware--tap-wrench-tap-handle",
+    "categorySlug": "misc-hardware",
+    "slug": "tap-wrench-tap-handle",
+    "name": "Tap Wrench (Tap Handle)",
+    "standard": "Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF",
+    "description": "Tap Wrench (Tap Handle), supplied (Left Thread, Standard, Fine Thread, NPT, BSP, UNC, UNF, BSW, BSF), stocked by Sabta Trading for cutting external and internal screw threads.",
+    "image": "/products/misc-hardware/tap-wrench-tap-handle.webp",
+    "order": 17
+  },
+  {
+    "id": "misc-hardware--o-ring-cord",
+    "categorySlug": "misc-hardware",
+    "slug": "o-ring-cord",
+    "name": "O Ring Cord",
+    "grade": "NBR70, Viton",
+    "description": "O Ring Cord, supplied in NBR70, Viton, stocked by Sabta Trading for sealing against fluid or gas leakage.",
+    "image": "/products/misc-hardware/o-ring-cord.webp",
+    "order": 18
+  },
+  {
+    "id": "misc-hardware--o-ring-closed-ring",
+    "categorySlug": "misc-hardware",
+    "slug": "o-ring-closed-ring",
+    "name": "O Ring Closed Ring",
+    "grade": "NBR70, Viton",
+    "description": "O Ring Closed Ring, supplied in NBR70, Viton, stocked by Sabta Trading for sealing against fluid or gas leakage.",
+    "image": "/products/misc-hardware/o-ring-closed-ring.webp",
+    "order": 19
+  },
+  {
+    "id": "misc-hardware--o-ring-kit-inch-metric",
+    "categorySlug": "misc-hardware",
+    "slug": "o-ring-kit-inch-metric",
+    "name": "O Ring Kit (Inch & Metric)",
+    "grade": "NBR70, Viton",
+    "description": "O Ring Kit (Inch & Metric), supplied in NBR70, Viton, stocked by Sabta Trading for sealing against fluid or gas leakage.",
+    "image": "/products/misc-hardware/o-ring-kit-inch-metric.webp",
+    "order": 20
+  },
+  {
+    "id": "misc-hardware--spring-toggles",
+    "categorySlug": "misc-hardware",
+    "slug": "spring-toggles",
+    "name": "Spring Toggles",
+    "grade": "GI, 304",
+    "description": "Spring Toggles, supplied in GI, 304, stocked by Sabta Trading for workshop maintenance, lubrication and thread repair.",
+    "image": "/products/misc-hardware/spring-toggles.webp",
+    "order": 21
+  },
+  {
+    "id": "misc-hardware--draw-toggle-latch",
+    "categorySlug": "misc-hardware",
+    "slug": "draw-toggle-latch",
+    "name": "Draw Toggle Latch",
+    "grade": "GI, 304",
+    "description": "Draw Toggle Latch, supplied in GI, 304, stocked by Sabta Trading for workshop maintenance, lubrication and thread repair.",
+    "image": "/products/misc-hardware/draw-toggle-latch.webp",
+    "order": 22
+  },
+  {
+    "id": "misc-hardware--workshop-assortment-inch-metric",
+    "categorySlug": "misc-hardware",
+    "slug": "workshop-assortment-inch-metric",
+    "name": "Workshop Assortment (Inch & Metric)",
+    "grade": "GI, 304 (Customizable As Per Customer Needs)",
+    "description": "Workshop Assortment (Inch & Metric), supplied in GI, 304 (Customizable As Per Customer Needs), stocked by Sabta Trading for workshop maintenance, lubrication and thread repair.",
+    "image": "/products/misc-hardware/workshop-assortment-inch-metric.webp",
+    "order": 23
+  },
+  {
+    "id": "misc-hardware--flat-key-key-bar",
+    "categorySlug": "misc-hardware",
+    "slug": "flat-key-key-bar",
+    "name": "Flat Key (Key Bar)",
+    "grade": "GI, 304",
+    "description": "Flat Key (Key Bar), supplied in GI, 304, stocked by Sabta Trading for workshop maintenance, lubrication and thread repair.",
+    "image": "/products/misc-hardware/flat-key-key-bar.webp",
+    "order": 24
+  },
+  {
+    "id": "misc-hardware--s-hook",
+    "categorySlug": "misc-hardware",
+    "slug": "s-hook",
+    "name": "S Hook",
+    "grade": "GI, 304",
+    "description": "S Hook, supplied in GI, 304, stocked by Sabta Trading for attaching and lifting loads securely.",
+    "image": "/products/misc-hardware/s-hook.webp",
+    "order": 25
+  },
+  {
+    "id": "misc-hardware--thread-insert",
+    "categorySlug": "misc-hardware",
+    "slug": "thread-insert",
+    "name": "Thread Insert",
+    "grade": "Aluminum, 304, 316",
+    "description": "Thread Insert, supplied in Aluminum, 304, 316, stocked by Sabta Trading for cutting or repairing damaged screw threads.",
+    "image": "/products/misc-hardware/thread-insert.webp",
+    "order": 26
+  },
+  {
+    "id": "misc-hardware--rivet-gun-hr-750",
+    "categorySlug": "misc-hardware",
+    "slug": "rivet-gun-hr-750",
+    "name": "Rivet Gun HR-750",
+    "grade": "Aluminum, 304, 316",
+    "description": "Rivet Gun HR-750, supplied in Aluminum, 304, 316, stocked by Sabta Trading for permanent fastening of sheet and panel materials.",
+    "image": "/products/misc-hardware/rivet-gun-hr-750.webp",
+    "order": 27
+  },
+  {
+    "id": "misc-hardware--rivet-gun-hr-730",
+    "categorySlug": "misc-hardware",
+    "slug": "rivet-gun-hr-730",
+    "name": "Rivet Gun HR-730",
+    "grade": "Aluminum, 304, 316",
+    "description": "Rivet Gun HR-730, supplied in Aluminum, 304, 316, stocked by Sabta Trading for permanent fastening of sheet and panel materials.",
+    "image": "/products/misc-hardware/rivet-gun-hr-730.webp",
+    "order": 28
+  },
+  {
+    "id": "misc-hardware--thread-repair-kit",
+    "categorySlug": "misc-hardware",
+    "slug": "thread-repair-kit",
+    "name": "Thread Repair Kit",
+    "grade": "Aluminum, 304, 316",
+    "description": "Thread Repair Kit, supplied in Aluminum, 304, 316, stocked by Sabta Trading for cutting or repairing damaged screw threads.",
+    "image": "/products/misc-hardware/thread-repair-kit.webp",
+    "order": 29
+  }
+]
