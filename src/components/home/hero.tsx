@@ -49,7 +49,7 @@ export async function Hero() {
           tuned for the old flat-blue background and would otherwise draw
           as a faint pattern over the footage), so the video reads on top
           of them, not underneath. */}
-      <div className="absolute inset-0 z-[2]" aria-hidden="true">
+      <div className="absolute inset-0 z-[2] bg-[url('/hero/hero-poster.webp')] bg-cover bg-center" aria-hidden="true">
         <video
           className="size-full object-cover transform-gpu"
           poster="/hero/hero-poster.webp"
@@ -57,7 +57,7 @@ export async function Hero() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
         >
           <source src="/hero/hero-video.webm" type="video/webm" />
           <source src="/hero/hero-video.mp4" type="video/mp4" />
