@@ -11,11 +11,13 @@ export function Providers({ children, siteData }: { children: ReactNode; siteDat
     <ReactLenis
       root
       options={{
-        lerp: 0.1,
-        duration: 1.2,
+        lerp: 0.08,
+        duration: 0.9,
         smoothWheel: true,
         syncTouch: false,
-        touchMultiplier: 1.2,
+        touchMultiplier: 1.5,
+        infinite: false,
+        overscroll: false,
       }}
     >
       <ScrollToTop />

@@ -1150,7 +1150,9 @@
     "grade": "GI, 304",
     "description": "Split Pin / Cotter Pin, supplied in GI, 304, stocked by Sabta Trading for shaft retention, alignment or quick-release pinning.",
     "image": "/products/clips-pins/split-pin-cotter-pin.webp",
-    "order": 15
+    "order": 15,
+    "featured": false,
+    "heroCarousel": false
   },
   {
     "id": "clips-pins--industrial-safety-pin",
