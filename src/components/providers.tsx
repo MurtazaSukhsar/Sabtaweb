@@ -6,7 +6,25 @@ import { QuoteProvider } from "@/context/quote-context"
 import { SiteDataProvider, type SiteData } from "@/context/site-data-context"
 import { ScrollToTop } from "@/components/scroll-to-top"
 
+import { usePathname } from "next/navigation"
+
 export function Providers({ children, siteData }: { children: ReactNode; siteData: SiteData }) {
+  const pathname = usePathname()
+  const isAdmin = pathname?.startsWith("/admin")
+
+  const content = (
+    <>
+      <ScrollToTop />
+      <SiteDataProvider value={siteData}>
+        <QuoteProvider>{children}</QuoteProvider>
+      </SiteDataProvider>
+    </>
+  )
+
+  if (isAdmin) {
+    return content
+  }
+
   return (
     <ReactLenis
       root
@@ -20,10 +38,7 @@ export function Providers({ children, siteData }: { children: ReactNode; siteDat
         overscroll: false,
       }}
     >
-      <ScrollToTop />
-      <SiteDataProvider value={siteData}>
-        <QuoteProvider>{children}</QuoteProvider>
-      </SiteDataProvider>
+      {content}
     </ReactLenis>
   )
 }

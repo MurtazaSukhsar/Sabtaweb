@@ -35,7 +35,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="flex h-screen overflow-hidden lg:flex-row flex-col">
+    <div className="min-h-screen bg-background lg:flex">
       {/* Mobile bar */}
       <div className="flex shrink-0 items-center gap-3 border-b border-border bg-primary px-4 py-3 text-primary-foreground lg:hidden">
         <button onClick={() => setOpen((v) => !v)} aria-label="Toggle menu">
@@ -45,7 +45,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
       </div>
 
       <aside
-        className={`${open ? "flex" : "hidden"} shrink-0 flex-col bg-primary text-primary-foreground lg:flex lg:h-full lg:w-60 lg:overflow-y-auto`}
+        className={`${open ? "flex" : "hidden"} shrink-0 flex-col bg-primary text-primary-foreground lg:flex lg:h-screen lg:sticky lg:top-0 lg:w-60 lg:overflow-y-auto`}
       >
         <div className="hidden px-5 py-5 lg:block">
           <p className="text-sm font-black uppercase tracking-wide">Sabta Trading</p>
@@ -95,7 +95,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
         </div>
       </aside>
 
-      <main className="min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">{children}</main>
+      <main className="min-w-0 flex-1 p-4 sm:p-6 lg:p-8">{children}</main>
     </div>
   )
 }

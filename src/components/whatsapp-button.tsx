@@ -1,11 +1,15 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 import { useSiteData } from "@/context/site-data-context"
 
 export function WhatsAppButton() {
+  const pathname = usePathname()
   const { contactInfo } = useSiteData()
   const [visible, setVisible] = useState(false)
+
+  if (pathname.startsWith("/admin")) return null
 
   useEffect(() => {
     // Reveal only after a small scroll rather than on a fixed timer. On

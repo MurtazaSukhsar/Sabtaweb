@@ -4,10 +4,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { Download, Mail, MapPin, Phone } from "lucide-react"
 import { catalogPdfPath } from "@/lib/site-data"
+import { usePathname } from "next/navigation"
 import { useSiteData } from "@/context/site-data-context"
 
 export function SiteFooter() {
+  const pathname = usePathname()
   const { categories, contactInfo, siteConfig } = useSiteData()
+
+  if (pathname.startsWith("/admin")) return null
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:px-12">

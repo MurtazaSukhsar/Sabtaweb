@@ -8,6 +8,8 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 import { CtaBanner } from "@/components/home/cta-banner"
 import { getSiteConfig, getCategories, getCategoryWithItems } from "@/lib/db"
 
+export const revalidate = 30
+
 export async function generateStaticParams() {
   const categories = await getCategories()
   return categories.map((cat) => ({ slug: cat.slug }))

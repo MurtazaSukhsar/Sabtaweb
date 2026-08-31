@@ -3,16 +3,19 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { ChevronRight, Mail, MessageCircle, Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react"
 import { useQuote } from "@/context/quote-context"
 import { useSiteData } from "@/context/site-data-context"
 
 export function QuoteDrawer() {
+  const pathname = usePathname()
   const { contactInfo } = useSiteData()
   const { items, removeItem, updateQuantity, clearQuote, totalCount, isDrawerOpen, closeDrawer, getFormattedQuoteText } =
     useQuote()
   const router = useRouter()
+
+  if (pathname.startsWith("/admin")) return null
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {

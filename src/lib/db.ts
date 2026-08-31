@@ -193,7 +193,7 @@ const getCachedCategoryRows = unstable_cache(
     return data
   },
   ["categories"],
-  { tags: [CATEGORIES_TAG], revalidate: 3600 },
+  { tags: [CATEGORIES_TAG], revalidate: 30 },
 )
 
 export async function getCategories(): Promise<CategoryMeta[]> {
@@ -237,7 +237,7 @@ const getCachedProductRows = unstable_cache(
     return data
   },
   ["products"],
-  { tags: [PRODUCTS_TAG], revalidate: 3600 },
+  { tags: [PRODUCTS_TAG], revalidate: 30 },
 )
 
 export async function getProducts(): Promise<Product[]> {

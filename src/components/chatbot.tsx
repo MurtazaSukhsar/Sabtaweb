@@ -1,7 +1,8 @@
 "use client"
-
+ 
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ArrowRight, Headset, Send, Sparkles, X } from "lucide-react"
 import { getAutoResponse, type ChatAction } from "@/lib/chatbot-content"
 import { useSiteData } from "@/context/site-data-context"
@@ -34,6 +35,7 @@ function nextId(prefix: string) {
 }
 
 export function Chatbot() {
+  const pathname = usePathname()
   const { chatbotContent: c, quickReplies, contactInfo } = useSiteData()
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
@@ -41,6 +43,8 @@ export function Chatbot() {
   const [isTyping, setIsTyping] = useState(false)
   const [visible, setVisible] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+
+  if (pathname.startsWith("/admin")) return null
 
   useEffect(() => {
     // Reveal only after a small scroll, matching the WhatsApp button — see

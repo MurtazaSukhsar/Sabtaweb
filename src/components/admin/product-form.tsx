@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState } from "react"
+import Link from "next/link"
 import { ImageUp } from "lucide-react"
 import type { CategoryMeta } from "@/lib/site-data"
 import type { Product } from "@/lib/products"
@@ -8,12 +9,16 @@ import type { Product } from "@/lib/products"
 export function ProductForm({
   categories,
   product,
+  initialCategorySlug,
   action,
 }: {
   categories: CategoryMeta[]
   product?: Product
+  initialCategorySlug?: string
   action: (formData: FormData) => void
 }) {
+  const defaultCategory = product?.categorySlug ?? initialCategorySlug ?? categories[0]?.slug ?? ""
+  const [selectedCategory, setSelectedCategory] = useState(defaultCategory)
   const [preview, setPreview] = useState<string | null>(product?.image ?? null)
   const [fileName, setFileName] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -28,7 +33,8 @@ export function ProductForm({
           id="categorySlug"
           name="categorySlug"
           required
-          defaultValue={product?.categorySlug ?? categories[0]?.slug}
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
           className="mt-1.5 h-12 w-full rounded-lg border border-input bg-background px-4 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/20"
         >
           {categories.map((c) => (
@@ -161,9 +167,17 @@ export function ProductForm({
         )}
       </div>
 
-      <button type="submit" className="h-12 rounded-lg btn-primary text-sm font-bold">
-        {product ? "Save Changes" : "Add Product"}
-      </button>
+      <div className="flex flex-wrap items-center gap-3 pt-2">
+        <button type="submit" className="h-12 flex-1 rounded-lg btn-primary text-sm font-bold">
+          {product ? "Save Changes" : "Add Product"}
+        </button>
+        <Link
+          href={`/admin/products${selectedCategory ? `?category=${selectedCategory}#category-${selectedCategory}` : ""}`}
+          className="inline-flex h-12 items-center justify-center rounded-lg border border-input bg-secondary/50 px-6 text-sm font-bold text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+        >
+          Cancel
+        </Link>
+      </div>
     </form>
   )
 }

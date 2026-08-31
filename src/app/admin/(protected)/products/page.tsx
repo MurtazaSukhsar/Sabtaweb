@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Suspense } from "react"
 import { getAllCategoriesWithItems } from "@/lib/db"
 import { AdminDashboard } from "@/components/admin/admin-dashboard"
 
@@ -19,7 +20,7 @@ export default async function AdminProductsPage() {
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-extrabold uppercase tracking-tight text-foreground">Products ({totalProducts})</h1>
-          <p className="mt-1 text-sm text-muted-foreground">Drag rows to reorder items within a range.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Search, filter by category, or drag rows to reorder items within a range.</p>
         </div>
         <Link href="/admin/products/new" className="inline-flex h-11 items-center rounded-lg btn-primary px-5 text-sm font-bold">
           Add Product
@@ -27,7 +28,9 @@ export default async function AdminProductsPage() {
       </div>
 
       <div className="mt-8">
-        <AdminDashboard categories={categories} />
+        <Suspense fallback={<div className="card-premium p-8 text-center text-sm text-muted-foreground">Loading products…</div>}>
+          <AdminDashboard categories={categories} />
+        </Suspense>
       </div>
     </div>
   )

@@ -143,7 +143,7 @@ export async function createProductAction(formData: FormData) {
   }
 
   revalidateProductPaths(product.categorySlug, product.slug)
-  redirect("/admin/products")
+  redirect(`/admin/products?category=${product.categorySlug}#category-${product.categorySlug}`)
 }
 
 export async function updateProductAction(id: string, formData: FormData) {
@@ -174,7 +174,7 @@ export async function updateProductAction(id: string, formData: FormData) {
 
   revalidateProductPaths(existing.categorySlug, existing.slug)
   revalidateProductPaths(updated.categorySlug, updated.slug)
-  redirect("/admin/products")
+  redirect(`/admin/products?category=${updated.categorySlug}#category-${updated.categorySlug}`)
 }
 
 export async function deleteProductAction(id: string) {
