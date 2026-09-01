@@ -83,7 +83,7 @@ export function SiteHeader() {
                 height={202}
                 priority
                 className={`w-auto object-contain transition-all duration-300 ${
-                  scrolled ? "h-9 sm:h-11 md:h-12" : "h-11 sm:h-13 md:h-16"
+                  scrolled ? "h-10 sm:h-12 md:h-14" : "h-13 sm:h-16 md:h-20"
                 }`}
               />
             </Link>

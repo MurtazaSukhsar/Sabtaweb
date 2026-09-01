@@ -41,8 +41,8 @@ export default async function HomePage() {
     <>
       <Hero />
       <TrustBadges />
-      <FeaturedProducts products={featuredProducts} />
       <CategoryGrid categories={categories} />
+      <FeaturedProducts products={featuredProducts} />
       <StatsCounter />
       <WhyChooseUs />
       <Industries />

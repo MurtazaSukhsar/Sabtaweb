@@ -8,7 +8,14 @@ import { StackRevealCard } from "@/components/home/stack-reveal-card"
 import { useMediaQuery } from "@/components/home/three-d-photo-carousel"
 
 export function FeaturedProducts({ products }: { products: Product[] }) {
-  const items = products.filter((p) => p.image).slice(0, 8)
+  // Capped at 6, not 8: every card in the deck is a live scroll-linked
+  // element (its own useTransform subscription, updated every scroll
+  // frame) for as long as this section is pinned, so the count directly
+  // sets the section's per-frame cost — and 8 stacked cards was still
+  // feeling heavy on scroll even after trimming GPU-layer promotion and
+  // the backdrop-blur badge. Fewer cards is less work every frame, and
+  // shortens the pinned scroll distance you have to sit through besides.
+  const items = products.filter((p) => p.image).slice(0, 6)
   if (items.length === 0) return null
   const cardCount = items.length
 
@@ -107,9 +114,21 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
       if (!decided) {
         if (Math.abs(deltaY) < ENGAGE_PX) return
         direction = deltaY > 0 ? 1 : -1
-        const atEnd = direction === 1 && activeCardIndexRef.current >= cardCount - 1
-        const atStart = direction === -1 && activeCardIndexRef.current <= 0
-        if (atEnd || atStart) {
+
+        // Only the forward direction is stepped one card per swipe. That
+        // throttle exists so a fast swipe doesn't blow past several product
+        // cards too quickly to read — but there's nothing to read on the
+        // way back out, so applying the same one-at-a-time throttle to the
+        // reverse direction just turns leaving the section (scrolling back
+        // up past it) into a slog of repeated swipes. Releasing capture
+        // here hands the gesture back to normal scrolling, so a single
+        // swipe back up can carry through several cards at once.
+        if (direction === -1) {
+          captured = false
+          return
+        }
+
+        if (activeCardIndexRef.current >= cardCount - 1) {
           captured = false
           return
         }
