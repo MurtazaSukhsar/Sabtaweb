@@ -59,8 +59,8 @@ export async function Hero() {
           playsInline
           preload="auto"
         >
-          <source src="/hero/hero-video.webm" type="video/webm" />
           <source src="/hero/hero-video.mp4" type="video/mp4" />
+          <source src="/hero/hero-video.webm" type="video/webm" />
         </video>
         {/* Light legibility gradient only — mostly transparent, so the
             footage reads clearly instead of washing out under a flat tint.

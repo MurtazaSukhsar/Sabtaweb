@@ -5,6 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ArrowRight, Headset, Send, Sparkles, X } from "lucide-react"
 import { getAutoResponse, type ChatAction } from "@/lib/chatbot-content"
+import { useScrollLock } from "@/lib/use-scroll-lock"
 import { useSiteData } from "@/context/site-data-context"
 
 // Answers are authored with **markdown bold**; render those spans as real <strong>.
@@ -66,14 +67,7 @@ export function Chatbot() {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [isOpen])
 
-  useEffect(() => {
-    if (!isOpen) return
-    const prevOverflow = document.body.style.overflow
-    document.body.style.overflow = "hidden"
-    return () => {
-      document.body.style.overflow = prevOverflow
-    }
-  }, [isOpen])
+  useScrollLock(isOpen)
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {

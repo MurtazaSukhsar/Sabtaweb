@@ -6,8 +6,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { LoadingScreen } from "@/components/loading-screen"
 import { Providers } from "@/components/providers"
-import { QuoteDrawer } from "@/components/quote-drawer"
-import { Chatbot } from "@/components/chatbot"
+import { DeferredWidgets } from "@/components/deferred-widgets"
 import {
   getSiteConfig,
   getContactInfo,
@@ -125,8 +124,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </main>
           <SiteFooter />
           <WhatsAppButton />
-          <Chatbot />
-          <QuoteDrawer />
+          <DeferredWidgets />
         </Providers>
       </body>
     </html>

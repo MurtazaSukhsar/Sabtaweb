@@ -110,7 +110,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
               <div className="mt-4 grid grid-cols-4 gap-3">
                 {gallery.slice(1).map((src) => (
                   <div key={src} className="relative aspect-square overflow-hidden rounded-lg border border-border bg-white">
-                    <Image src={src} alt={product.name} fill sizes="120px" quality={90} className="object-contain p-2" />
+                    <Image src={src} alt={product.name} fill sizes="120px" className="object-contain p-2" />
                   </div>
                 ))}
               </div>

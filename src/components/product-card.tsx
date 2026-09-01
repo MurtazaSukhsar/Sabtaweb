@@ -14,7 +14,6 @@ export function ProductCard({ item, color, icon }: { item: Product; color: strin
             alt={item.name}
             fill
             sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 50vw"
-            quality={90}
             className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
           />
         ) : (

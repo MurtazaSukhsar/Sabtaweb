@@ -6,6 +6,7 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { ChevronRight, Mail, MessageCircle, Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react"
 import { useQuote } from "@/context/quote-context"
+import { useScrollLock } from "@/lib/use-scroll-lock"
 import { useSiteData } from "@/context/site-data-context"
 
 export function QuoteDrawer() {
@@ -25,12 +26,7 @@ export function QuoteDrawer() {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [isDrawerOpen, closeDrawer])
 
-  useEffect(() => {
-    document.body.style.overflow = isDrawerOpen ? "hidden" : ""
-    return () => {
-      document.body.style.overflow = ""
-    }
-  }, [isDrawerOpen])
+  useScrollLock(isDrawerOpen)
 
   function handleSendViaForm() {
     closeDrawer()

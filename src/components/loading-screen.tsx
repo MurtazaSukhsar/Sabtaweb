@@ -26,11 +26,18 @@ export function LoadingScreen() {
 
     let isMounted = true
 
-    // Check DOM, Images, Video, Fonts readiness
+    // Check DOM, Images, Video, Fonts readiness.
+    // Only the LCP-critical assets are tracked here (images explicitly
+    // marked priority, which next/image renders with fetchpriority="high"),
+    // not every <img> on the page — most images below the fold use native
+    // lazy-loading and never start fetching until scrolled into view, so
+    // waiting on "every image complete" meant this screen almost always
+    // fell through to the safety timeout below instead of resolving as
+    // soon as the visible content was actually ready.
     const checkAssets = () => {
       if (!isMounted) return
 
-      const images = Array.from(document.images)
+      const images = Array.from(document.querySelectorAll<HTMLImageElement>('img[fetchpriority="high"]'))
       const video = document.querySelector("video")
 
       let totalCount = 1 + images.length + (video ? 1 : 0)
@@ -55,7 +62,7 @@ export function LoadingScreen() {
         progressTargetRef.current = target
       }
 
-      // Check if all DOM & critical media are 100% complete
+      // Check if DOM & critical media are ready
       const isDomComplete = document.readyState === "complete"
       const isImagesComplete = images.every((img) => img.complete)
       const isVideoReady = !video || video.readyState >= 2
@@ -79,11 +86,11 @@ export function LoadingScreen() {
 
     const interval = setInterval(checkAssets, 150)
 
-    // Safety timeout: Ensure page opens after 6s even on super slow network
+    // Safety timeout: Ensure page opens after 2.5s even on super slow network
     const maxTimeout = setTimeout(() => {
       isFullyLoadedRef.current = true
       progressTargetRef.current = 100
-    }, 6000)
+    }, 2500)
 
     // Smooth progress animation tick
     let currentDisplayPct = 0
@@ -148,7 +155,6 @@ export function LoadingScreen() {
               width={620}
               height={202}
               priority
-              unoptimized
               style={{ height: "auto" }}
               className="block w-full"
             />

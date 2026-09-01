@@ -3,10 +3,13 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react"
+import { useScrollLock } from "@/lib/use-scroll-lock"
 
 export function CatalogGallery({ images, categoryName }: { images: { page: number; src: string }[]; categoryName: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+
+  useScrollLock(openIndex !== null)
 
   useEffect(() => {
     if (openIndex === null) return
@@ -16,11 +19,9 @@ export function CatalogGallery({ images, categoryName }: { images: { page: numbe
       if (e.key === "ArrowLeft") setOpenIndex((i) => (i === null ? i : Math.max(0, i - 1)))
     }
     document.addEventListener("keydown", onKey)
-    document.body.style.overflow = "hidden"
     closeButtonRef.current?.focus()
     return () => {
       document.removeEventListener("keydown", onKey)
-      document.body.style.overflow = ""
     }
   }, [openIndex, images.length])
 

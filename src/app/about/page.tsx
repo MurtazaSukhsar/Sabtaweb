@@ -5,6 +5,7 @@ import { Boxes, CalendarDays, ChevronRight, Layers, Users } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import { TiltImage } from "@/components/ui/tilt-image"
 import { CtaBanner } from "@/components/home/cta-banner"
 import { Industries } from "@/components/home/industries"
 import { getSiteConfig, getContactInfo, getCategories } from "@/lib/db"
@@ -49,31 +50,40 @@ export default async function AboutPage() {
         <Breadcrumbs crumbs={[{ label: "About" }]} />
 
         <div className="mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          <ScrollReveal>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-white shadow-sm flex items-center justify-center">
-              <Image
-                src={siteConfig.companyProfileImage || "/brand/logo.png"}
-                alt={`${siteConfig.name} Company Profile`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain p-8 sm:p-12"
-              />
-            </div>
+          <ScrollReveal className="group">
+            <TiltImage>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-white shadow-sm flex items-center justify-center">
+                <Image
+                  src={siteConfig.companyProfileImage || "/brand/logo.png"}
+                  alt={`${siteConfig.name} Company Profile`}
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-contain p-8 sm:p-12 transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+            </TiltImage>
           </ScrollReveal>
-          <ScrollReveal delay={150}>
-            <div>
+          <div>
+            <ScrollReveal delay={100}>
               <h2 className="text-balance text-2xl font-extrabold uppercase tracking-tight text-foreground md:text-3xl">Company Profile</h2>
-              <div className="mt-6 flex max-w-prose flex-col gap-5 text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
+            </ScrollReveal>
+            <div className="mt-6 flex max-w-prose flex-col gap-5 text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
+              <ScrollReveal delay={230}>
                 <p>
                   {siteConfig.name} has supplied fasteners and marine rigging hardware from Dubai since{" "}
                   {siteConfig.founded} &mdash; serving the Automotive, Manufacturing, Marine and Oilfield industries with
                   the same commitment to quality and service that built our name.
                 </p>
+              </ScrollReveal>
+              <ScrollReveal delay={360}>
                 <p>
                   {siteConfig.itemsInStock} items in ready stock at competitive pricing, updated regularly to meet
                   demand, backed by a trusted supplier network for anything we don&rsquo;t hold on the shelf.
                 </p>
-              </div>
+              </ScrollReveal>
+            </div>
+            <ScrollReveal delay={480}>
               <Link
                 href="/contact"
                 className="group relative mt-8 inline-flex h-13 items-center overflow-hidden rounded-lg btn-primary px-8 text-sm"
@@ -83,8 +93,8 @@ export default async function AboutPage() {
                   <ChevronRight size={16} strokeWidth={2} aria-hidden="true" />
                 </span>
               </Link>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
         </div>
 
         <div className="mt-20 grid grid-cols-2 gap-5 md:mt-28 md:gap-8 lg:grid-cols-4">
@@ -99,6 +109,66 @@ export default async function AboutPage() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+
+        <div className="mt-20 md:mt-28">
+          <div className="grid items-center gap-12 lg:grid-cols-5 lg:gap-16">
+            <ScrollReveal className="group lg:col-span-2">
+              <TiltImage className="mx-auto w-full max-w-sm">
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-border shadow-sm">
+                  <Image
+                    src="/team/saifuddin-ismail.jpg"
+                    alt="Saifuddin Ismail, Founder and Chairman of Sabta Trading Co. LLC"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                </div>
+              </TiltImage>
+            </ScrollReveal>
+            <div className="lg:col-span-3">
+              <ScrollReveal delay={150}>
+                <p className="eyebrow !text-accent">Our Founder</p>
+                <h2 className="mt-3 text-2xl font-extrabold uppercase tracking-tight text-foreground md:text-3xl">
+                  Saifuddin Ismail
+                </h2>
+                <p className="mt-1 text-sm font-semibold text-accent">
+                  Founder &amp; Chairman | Sabta Trading Co. LLC
+                </p>
+              </ScrollReveal>
+              <div className="mt-6 flex max-w-prose flex-col gap-5 text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
+                <ScrollReveal delay={280}>
+                  <p>
+                    Established in Dubai in {siteConfig.founded}, {siteConfig.name} was founded by Mr. Saifuddin
+                    Ismail, an accomplished entrepreneur with over 38 years of experience in trading, procurement,
+                    distribution, and business development.
+                  </p>
+                </ScrollReveal>
+                <ScrollReveal delay={410}>
+                  <p>
+                    Through decades of leadership, he has built the company on a foundation of integrity,
+                    reliability, quality service, and long-term relationships. His strategic direction and
+                    extensive industry experience have helped develop {siteConfig.shortName} into a respected
+                    supplier of industrial fasteners, marine hardware, stainless steel products, lifting
+                    accessories, and industrial supplies.
+                  </p>
+                </ScrollReveal>
+                <ScrollReveal delay={540}>
+                  <p>
+                    From building strong international supplier networks to developing lasting customer
+                    relationships, Mr. Ismail&rsquo;s leadership has been central to the company&rsquo;s growth and
+                    stability.
+                  </p>
+                </ScrollReveal>
+                <ScrollReveal delay={670}>
+                  <p>
+                    Today, his principles remain deeply embedded in the way {siteConfig.shortName} conducts
+                    business &mdash; earning trust, delivering value, and building relationships that last.
+                  </p>
+                </ScrollReveal>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="mt-20 md:mt-28">
@@ -133,4 +203,3 @@ export default async function AboutPage() {
     </>
   )
 }
-
