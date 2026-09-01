@@ -176,7 +176,11 @@ export function FeaturedProducts({ products }: { products: Product[] }) {
                 // and a rendered shadow — with up to 8 cards stacked and fully
                 // overlapping, promoting every one of them is what was making
                 // the deck feel heavy/laggy to scroll through on mobile GPUs.
-                isNear={Math.abs(index - activeCardIndex) <= 2}
+                // Kept tight (prev/current/next only, not +/-2) since each
+                // promoted card is its own compositor layer for the whole
+                // scroll-linked gesture — fewer live layers is what actually
+                // buys back the frame budget on weaker GPUs.
+                isNear={Math.abs(index - activeCardIndex) <= 1}
               />
             ))}
           </div>

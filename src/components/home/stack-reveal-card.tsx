@@ -89,9 +89,15 @@ export function StackRevealCard({ index, product, advance, flyDistance, priority
             priority={priority}
             className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
           />
+          {/* Solid tint, no backdrop-blur: this badge sits inside a card
+              that's continuously transformed while scrolling through the
+              deck, and backdrop-filter forces the browser to resample
+              whatever's behind it every frame — expensive multiplied across
+              several stacked, moving cards at once. A flatter, more opaque
+              tint reads almost identically without that cost. */}
           <span
-            className="absolute start-5 top-5 inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm sm:text-[11px]"
-            style={{ backgroundColor: `${colorHex}1F`, color: colorHex }}
+            className="absolute start-5 top-5 inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider sm:text-[11px]"
+            style={{ backgroundColor: `${colorHex}33`, color: colorHex }}
           >
             {product.grade || categoryName}
           </span>

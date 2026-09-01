@@ -2,12 +2,22 @@
 
 import { useEffect, useLayoutEffect, useState, useRef } from "react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
+
+// Routes worth having ready before the visitor ever clicks — the ones
+// almost everyone lands on next from the homepage. Warming these here (in
+// parallel with the boot animation, not blocking it) means the RSC payload
+// and JS chunk for /products are already sitting in the router cache by the
+// time someone clicks "Browse Products", instead of only starting the
+// fetch on click.
+const PREFETCH_ROUTES = ["/products", "/about", "/contact"]
 
 export function LoadingScreen() {
   const [pct, setPct] = useState(0)
   const [exiting, setExiting] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [skip, setSkip] = useState(false)
+  const router = useRouter()
 
   const isFullyLoadedRef = useRef(false)
   const progressTargetRef = useRef(15)
@@ -20,6 +30,16 @@ export function LoadingScreen() {
       setHidden(true)
     }
   }, [])
+
+  // Fires on every page load — including the skipped/no-animation ones —
+  // since this is about warming the router cache, not about the visual
+  // boot sequence. Runs independent of the loading-progress effect below
+  // so it starts immediately rather than waiting on asset checks.
+  useEffect(() => {
+    for (const route of PREFETCH_ROUTES) {
+      router.prefetch(route)
+    }
+  }, [router])
 
   useEffect(() => {
     if (skip) return
